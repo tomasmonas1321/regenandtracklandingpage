@@ -64,7 +64,7 @@ export default function Features() {
                 className={`bg-gradient-to-br ${feature.bgGradient} p-8 rounded-2xl border ${feature.borderColor} ${feature.hoverColor} transition-all duration-300 transform hover:scale-105`}
                 data-testid={feature.testId}
               >
-                <div className={`w-16 h-16 bg-gradient-to-r ${feature.gradient} rounded-xl flex items-center justify-center mb-6`}>
+                <div className="w-16 h-16 bg-gradient-to-r from-vibrant-blue to-vibrant-green rounded-xl flex items-center justify-center mb-6 ml-[111px] mr-[111px]">
                   <IconComponent className="text-white h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-white" data-testid={`${feature.testId}-title`}>
