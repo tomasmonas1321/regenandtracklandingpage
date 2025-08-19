@@ -43,12 +43,12 @@ export default function Testimonials() {
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center" data-testid="stat-athletes">
-            <div className="text-4xl font-black text-vibrant-blue mb-2">10K+</div>
+            <div className="text-4xl font-black text-vibrant-blue mb-2">1K+</div>
             <div className="text-gray-300">Active Athletes</div>
           </div>
           <div className="text-center" data-testid="stat-data-points">
-            <div className="text-4xl font-black text-vibrant-orange mb-2">50M+</div>
-            <div className="text-gray-300">Data Points Tracked</div>
+            <div className="text-4xl font-black text-vibrant-orange mb-2">500K+</div>
+            <div className="text-gray-300">Data Points Captured</div>
           </div>
           <div className="text-center" data-testid="stat-performance">
             <div className="text-4xl font-black text-vibrant-green mb-2">95%</div>
