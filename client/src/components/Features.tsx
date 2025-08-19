@@ -15,7 +15,7 @@ export default function Features() {
     {
       icon: Heart,
       title: "Know Your Body",
-      description: "Get a clear picture of your readiness to perform. Our recovery and wellness scores help you make smarter training decisions.",
+      description: "Get a clear picture of your readiness to perform. Recovery and wellness scores help you make smarter training decisions.",
       gradient: "from-vibrant-green to-vibrant-blue",
       borderColor: "border-blue-700/30",
       hoverColor: "hover:border-blue-500/50",
@@ -25,7 +25,7 @@ export default function Features() {
     {
       icon: Rocket,
       title: "Level Up Your Performance",
-      description: "Access a library of free tools to help you improve your mobility, mindset, and more.",
+      description: "Access a library of free tools to help you improve your sleep, mindset, conditioing and more.",
       gradient: "from-vibrant-orange to-vibrant-red",
       borderColor: "border-green-700/30",
       hoverColor: "hover:border-green-500/50",
