@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4 ml-[19px] mr-[19px]" data-testid="footer-product-title">Product</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#features" className="hover:text-white transition-colors" data-testid="footer-features">Features</a></li>
+              <li><a href="#features" className="ml-[17px] mr-[17px] hover:text-white transition-colors" data-testid="footer-features">Features</a></li>
               <li><a href="#download" className="hover:text-white transition-colors" data-testid="footer-download">Download</a></li>
               <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-roadmap">Roadmap</a></li>
             </ul>
