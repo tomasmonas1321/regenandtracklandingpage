@@ -41,11 +41,15 @@
   --font-mono: Menlo, monospace;
   --radius: 1.3rem;
   
-  /* Custom athletic theme colors */
-  --navy: hsl(240, 52%, 9%);
-  --navy-light: hsl(240, 48%, 15%);
-  --purple-950: hsl(240, 68%, 18%);
-  --purple-900: hsl(240, 62%, 25%);
+  /* Custom athletic theme colors - vibrant R logo inspired */
+  --navy: hsl(220, 30%, 8%);
+  --navy-light: hsl(220, 25%, 12%);
+  --vibrant-blue: hsl(195, 100%, 50%);
+  --vibrant-green: hsl(140, 70%, 45%);
+  --vibrant-orange: hsl(25, 95%, 55%);
+  --vibrant-red: hsl(10, 90%, 55%);
+  --purple-950: hsl(220, 40%, 15%);
+  --purple-900: hsl(220, 35%, 20%);
 }
 
 .dark {

@@ -6,7 +6,7 @@ export default function Testimonials() {
       name: "Marcus Johnson",
       role: "Competitive Powerlifter",
       initials: "MJ",
-      gradient: "from-blue-500 to-purple-600",
+      gradient: "from-vibrant-blue to-vibrant-green",
       quote: "Finally, an app that gets it. The recovery tracking has completely changed how I approach my training cycles.",
       testId: "testimonial-marcus"
     },
@@ -14,7 +14,7 @@ export default function Testimonials() {
       name: "Alex Smith",
       role: "Marathon Runner",
       initials: "AS",
-      gradient: "from-green-500 to-blue-600",
+      gradient: "from-vibrant-green to-vibrant-blue",
       quote: "The data visualization is incredible. I can see exactly how my sleep affects my performance the next day.",
       testId: "testimonial-alex"
     },
@@ -22,7 +22,7 @@ export default function Testimonials() {
       name: "Jessica Davis",
       role: "CrossFit Athlete",
       initials: "JD",
-      gradient: "from-orange-500 to-red-600",
+      gradient: "from-vibrant-orange to-vibrant-red",
       quote: "Simple yet powerful. I've tried every fitness app out there, and this is the one that actually helped me PR.",
       testId: "testimonial-jessica"
     }
@@ -43,15 +43,15 @@ export default function Testimonials() {
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center" data-testid="stat-athletes">
-            <div className="text-4xl font-black text-blue-400 mb-2">10K+</div>
+            <div className="text-4xl font-black text-vibrant-blue mb-2">10K+</div>
             <div className="text-gray-300">Active Athletes</div>
           </div>
           <div className="text-center" data-testid="stat-data-points">
-            <div className="text-4xl font-black text-purple-400 mb-2">50M+</div>
+            <div className="text-4xl font-black text-vibrant-orange mb-2">50M+</div>
             <div className="text-gray-300">Data Points Tracked</div>
           </div>
           <div className="text-center" data-testid="stat-performance">
-            <div className="text-4xl font-black text-green-400 mb-2">95%</div>
+            <div className="text-4xl font-black text-vibrant-green mb-2">95%</div>
             <div className="text-gray-300">Report Better Performance</div>
           </div>
         </div>

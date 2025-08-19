@@ -69,6 +69,12 @@ export default {
           950: "var(--purple-950)",
           900: "var(--purple-900)",
         },
+        vibrant: {
+          blue: "var(--vibrant-blue)",
+          green: "var(--vibrant-green)",
+          orange: "var(--vibrant-orange)",
+          red: "var(--vibrant-red)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

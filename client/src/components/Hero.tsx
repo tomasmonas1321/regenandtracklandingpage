@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight" data-testid="hero-headline">
               <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">The Smartest</span><br />
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Way to Train</span>
+              <span className="bg-gradient-to-r from-vibrant-blue to-vibrant-green bg-clip-text text-transparent">Way to Train</span>
             </h1>
             
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 leading-relaxed max-w-2xl" data-testid="hero-subheadline">
@@ -35,7 +35,7 @@ export default function Hero() {
               <Button
                 onClick={scrollToDownload}
                 size="lg"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-8 py-6 text-lg font-semibold"
+                className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-8 py-6 text-lg font-semibold"
                 data-testid="hero-primary-cta"
               >
                 <Download className="mr-3 h-5 w-5" />
@@ -55,15 +55,15 @@ export default function Hero() {
 
             <div className="flex items-center justify-center lg:justify-start space-x-8 text-sm text-gray-400">
               <div className="flex items-center space-x-2" data-testid="hero-feature-free">
-                <Check className="h-5 w-5 text-green-400" />
+                <Check className="h-5 w-5 text-vibrant-green" />
                 <span>100% Free</span>
               </div>
               <div className="flex items-center space-x-2" data-testid="hero-feature-privacy">
-                <Shield className="h-5 w-5 text-blue-400" />
+                <Shield className="h-5 w-5 text-vibrant-blue" />
                 <span>Privacy First</span>
               </div>
               <div className="flex items-center space-x-2" data-testid="hero-feature-mobile">
-                <Smartphone className="h-5 w-5 text-purple-400" />
+                <Smartphone className="h-5 w-5 text-vibrant-orange" />
                 <span>Mobile Ready</span>
               </div>
             </div>

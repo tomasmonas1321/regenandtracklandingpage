@@ -35,15 +35,15 @@ export default function AppPreview() {
             <div className="space-y-3">
               <div className="bg-purple-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="wellness-metric-sleep">
                 <span className="text-gray-300">Sleep Quality</span>
-                <span className="text-green-400 font-semibold">9/10</span>
+                <span className="text-vibrant-green font-semibold">9/10</span>
               </div>
               <div className="bg-purple-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="wellness-metric-energy">
                 <span className="text-gray-300">Energy Level</span>
-                <span className="text-yellow-400 font-semibold">7/10</span>
+                <span className="text-vibrant-orange font-semibold">7/10</span>
               </div>
               <div className="bg-purple-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="wellness-metric-stress">
                 <span className="text-gray-300">Stress Level</span>
-                <span className="text-blue-400 font-semibold">3/10</span>
+                <span className="text-vibrant-blue font-semibold">3/10</span>
               </div>
             </div>
           </div>
@@ -67,15 +67,15 @@ export default function AppPreview() {
             <div className="space-y-3">
               <div className="bg-blue-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="analytics-metric-sleep">
                 <span className="text-gray-300">Weekly Avg Sleep</span>
-                <span className="text-green-400 font-semibold">8.2 hrs</span>
+                <span className="text-vibrant-green font-semibold">8.2 hrs</span>
               </div>
               <div className="bg-blue-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="analytics-metric-recovery">
                 <span className="text-gray-300">Recovery Score</span>
-                <span className="text-blue-400 font-semibold">85%</span>
+                <span className="text-vibrant-blue font-semibold">85%</span>
               </div>
               <div className="bg-blue-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="analytics-metric-load">
                 <span className="text-gray-300">Training Load</span>
-                <span className="text-orange-400 font-semibold">Optimal</span>
+                <span className="text-vibrant-orange font-semibold">Optimal</span>
               </div>
             </div>
           </div>
@@ -99,15 +99,15 @@ export default function AppPreview() {
             <div className="space-y-3">
               <div className="bg-green-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="recovery-metric-score">
                 <span className="text-gray-300">Recovery Score</span>
-                <span className="text-green-400 font-semibold">92%</span>
+                <span className="text-vibrant-green font-semibold">92%</span>
               </div>
               <div className="bg-green-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="recovery-metric-readiness">
                 <span className="text-gray-300">Training Readiness</span>
-                <span className="text-green-400 font-semibold">High</span>
+                <span className="text-vibrant-green font-semibold">High</span>
               </div>
               <div className="bg-green-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="recovery-metric-activities">
                 <span className="text-gray-300">Active Activities</span>
-                <span className="text-blue-400 font-semibold">5/7</span>
+                <span className="text-vibrant-blue font-semibold">5/7</span>
               </div>
             </div>
           </div>
