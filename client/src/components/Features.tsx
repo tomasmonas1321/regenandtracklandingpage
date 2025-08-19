@@ -70,7 +70,7 @@ export default function Features() {
                 <h3 className="text-xl font-bold mb-4 text-white text-center" data-testid={`${feature.testId}-title`}>
                   {feature.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed" data-testid={`${feature.testId}-description`}>
+                <p className="text-gray-300 leading-relaxed text-center" data-testid={`${feature.testId}-description`}>
                   {feature.description}
                 </p>
               </div>
