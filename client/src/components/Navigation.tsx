@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/regen & track logo very small_1755603375132.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,9 +34,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3" data-testid="logo">
-            <div className="w-8 h-8 bg-gradient-to-r from-vibrant-blue via-vibrant-green to-vibrant-orange rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">R</span>
-            </div>
+            <img 
+              src={logoImage} 
+              alt="Regen & Track Logo" 
+              className="w-8 h-8 object-contain"
+            />
             <span className="font-bold text-lg">Regen & Track</span>
           </div>
           

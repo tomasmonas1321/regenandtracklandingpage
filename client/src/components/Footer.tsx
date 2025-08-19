@@ -1,4 +1,5 @@
 import { Twitter, Instagram, Youtube } from "lucide-react";
+import logoImage from "@assets/regen & track logo very small_1755603375132.png";
 
 export default function Footer() {
   return (
@@ -7,9 +8,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center space-x-3 mb-6" data-testid="footer-logo">
-              <div className="w-10 h-10 bg-gradient-to-r from-vibrant-blue via-vibrant-green to-vibrant-orange rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold">R</span>
-              </div>
+              <img 
+                src={logoImage} 
+                alt="Regen & Track Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="font-bold text-xl text-white">Regen & Track</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md" data-testid="footer-description">
