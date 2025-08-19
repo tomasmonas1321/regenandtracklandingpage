@@ -8,9 +8,7 @@ export default function CTA() {
         <h2 className="text-4xl sm:text-5xl font-black mb-6 text-white" data-testid="cta-headline">
           Ready to Train Smarter?
         </h2>
-        <p className="text-xl text-blue-50 mb-8 leading-relaxed" data-testid="cta-description">
-          Stop guessing. Start optimizing. Regen & Track is the free app for serious athletes who are ready to dominate their goals. We provide the data-driven insights you need to train smarter, recover faster, and achieve breakthrough results. Go beyond raw data. Our smart AI analyzes your journal entries, wellness scores, and training logs to provide personalized feedback and recommendations, helping you optimize your performance like never before.
-        </p>
+        <p className="text-xl text-blue-50 mb-8 leading-relaxed" data-testid="cta-description">Stop guessing. Start optimizing. Regen & Track is the free app for serious athletes who are ready to dominate their goals. We provide the data-driven insights you need to train smarter, recover faster, and achieve breakthrough results. Go beyond raw data. Our smart AI analyzes your journal entries, wellness and recovery scores to provide personalized feedback and recommendations, helping you optimize your performance like never before.</p>
         
         <div className="flex justify-center mb-8">
           <Button
