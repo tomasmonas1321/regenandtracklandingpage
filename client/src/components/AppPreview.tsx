@@ -43,7 +43,7 @@ export default function AppPreview() {
               </div>
               <div className="bg-purple-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="wellness-metric-stress">
                 <span className="text-gray-300">Stress Level</span>
-                <span className="text-vibrant-blue font-semibold">3/10</span>
+                <span className="font-semibold text-[#ff3300]">3/10</span>
               </div>
             </div>
           </div>
