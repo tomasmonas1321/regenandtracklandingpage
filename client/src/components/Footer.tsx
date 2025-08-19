@@ -48,7 +48,6 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li><a href="#features" className="hover:text-white transition-colors" data-testid="footer-features">Features</a></li>
               <li><a href="#download" className="hover:text-white transition-colors" data-testid="footer-download">Download</a></li>
-              <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-updates">Updates</a></li>
               <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-roadmap">Roadmap</a></li>
             </ul>
           </div>
