@@ -52,9 +52,7 @@ export default function Features() {
             <span className="bg-gradient-to-r from-vibrant-blue to-vibrant-green bg-clip-text text-transparent">Everything You Need</span><br />
             <span className="text-white">In One Place</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed" data-testid="features-description">
-            Stop juggling multiple apps. Regen & Track brings together all the tools serious athletes need to track, analyze, and optimize their performance.
-          </p>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed" data-testid="features-description">Regen & Track is the one-stop shop for all your subjective recovery metrics. It brings together all the tools you need to track, analyze, and optimize your recovery & performance.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
