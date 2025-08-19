@@ -25,7 +25,7 @@ export default function Features() {
     {
       icon: Rocket,
       title: "Level Up Your Performance",
-      description: "Access a library of free tools to help you improve your sleep, mindset, conditioing and more.",
+      description: "Access a library of free tools to help you improve your sleep, mindset, conditioning and more.",
       gradient: "from-vibrant-orange to-vibrant-red",
       borderColor: "border-green-700/30",
       hoverColor: "hover:border-green-500/50",
