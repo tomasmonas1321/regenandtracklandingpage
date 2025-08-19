@@ -71,7 +71,7 @@ export default function AppPreview() {
               </div>
               <div className="bg-blue-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="analytics-metric-recovery">
                 <span className="text-gray-300">Recovery Score</span>
-                <span className="text-vibrant-blue font-semibold">85%</span>
+                <span className="text-vibrant-blue font-semibold">95</span>
               </div>
               <div className="bg-blue-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="analytics-metric-load">
                 <span className="text-gray-300">Training Load</span>
