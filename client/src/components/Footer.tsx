@@ -4,7 +4,7 @@ import logoImage from "@assets/regen & track logo very small_1755603375132.png";
 export default function Footer() {
   return (
     <footer className="bg-navy border-t border-purple-900/30 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[0px] pb-[0px] mt-[-18px] mb-[-18px]">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center space-x-3 mb-6 ml-[79px] mr-[79px] pl-[5px] pr-[5px]" data-testid="footer-logo">
