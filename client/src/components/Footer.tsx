@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
-            <div className="flex items-center space-x-3 mb-6" data-testid="footer-logo">
+            <div className="flex items-center space-x-3 mb-6 ml-[79px] mr-[79px] pl-[5px] pr-[5px]" data-testid="footer-logo">
               <img 
                 src={logoImage} 
                 alt="Regen & Track Logo" 
