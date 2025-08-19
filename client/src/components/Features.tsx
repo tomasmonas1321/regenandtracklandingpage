@@ -67,7 +67,7 @@ export default function Features() {
                 <div className="w-16 h-16 bg-gradient-to-r from-vibrant-blue to-vibrant-green rounded-xl flex items-center justify-center mb-6 ml-[111px] mr-[111px]">
                   <IconComponent className="text-white h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-white" data-testid={`${feature.testId}-title`}>
+                <h3 className="text-xl font-bold mb-4 text-white text-center" data-testid={`${feature.testId}-title`}>
                   {feature.title}
                 </h3>
                 <p className="text-gray-300 leading-relaxed" data-testid={`${feature.testId}-description`}>
