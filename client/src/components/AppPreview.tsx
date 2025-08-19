@@ -93,7 +93,7 @@ export default function AppPreview() {
                 Recovery Assessment
               </h3>
               <p className="text-gray-300 mb-6" data-testid="preview-recovery-description">
-                Track your recovery activities, sleep patterns, and lifestyle factors to optimize your training readiness.
+                Track your recovery activities, sleep patterns, and lifestyle factors that affect your training readiness.
               </p>
             </div>
             <div className="space-y-3">
