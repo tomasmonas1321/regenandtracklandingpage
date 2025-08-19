@@ -79,6 +79,20 @@ export default function Features() {
             );
           })}
         </div>
+
+        {/* Additional Download Button */}
+        <div className="text-center mt-16">
+          <button
+            onClick={() => {
+              const element = document.getElementById("download");
+              element?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-12 py-6 text-xl font-bold text-white rounded-2xl shadow-2xl"
+            data-testid="features-download-cta"
+          >
+            Get Regen & Track for Free
+          </button>
+        </div>
       </div>
     </section>
   );

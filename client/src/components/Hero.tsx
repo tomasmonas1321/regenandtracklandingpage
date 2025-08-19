@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, Play, Check, Shield, Smartphone } from "lucide-react";
-import heroScreenshot1 from "@assets/image_1755601849353.png";
+import heroScreenshot1 from "@assets/image_1755602695785.png";
 
 export default function Hero() {
   const scrollToDownload = () => {

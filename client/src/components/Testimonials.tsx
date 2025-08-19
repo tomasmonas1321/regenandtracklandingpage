@@ -33,10 +33,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black mb-6 text-white" data-testid="testimonials-headline">
-            Built for Athletes, By Athletes
+            Built for Athletes, By Coaches
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed" data-testid="testimonials-description">
-            Join thousands of athletes who are already training smarter and performing better with Regen & Track.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8" data-testid="testimonials-description">
+            For the serious athlete, data is everything. Regen & Track gives you the tools to track your progress, optimize your recovery, and unleash your inner champion. All for free.
           </p>
         </div>
 
@@ -56,42 +56,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Testimonials */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className={`bg-gradient-to-br ${index === 0 ? 'from-purple-900/40 to-navy/60 border-purple-700/30' : index === 1 ? 'from-blue-900/40 to-navy/60 border-blue-700/30' : 'from-green-900/40 to-navy/60 border-green-700/30'} p-8 rounded-2xl border`}
-              data-testid={testimonial.testId}
-            >
-              <div className="flex items-center mb-4">
-                <div className="flex text-yellow-400 mb-2" data-testid={`${testimonial.testId}-rating`}>
-                  {[...Array(5)].map((_, starIndex) => (
-                    <Star key={starIndex} className="h-5 w-5 fill-current" />
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-300 mb-6 italic" data-testid={`${testimonial.testId}-quote`}>
-                "{testimonial.quote}"
-              </p>
-              <div className="flex items-center">
-                <div className={`w-12 h-12 bg-gradient-to-r ${testimonial.gradient} rounded-full flex items-center justify-center mr-4`}>
-                  <span className="text-white font-bold" data-testid={`${testimonial.testId}-initials`}>
-                    {testimonial.initials}
-                  </span>
-                </div>
-                <div>
-                  <div className="font-semibold text-white" data-testid={`${testimonial.testId}-name`}>
-                    {testimonial.name}
-                  </div>
-                  <div className="text-gray-400 text-sm" data-testid={`${testimonial.testId}-role`}>
-                    {testimonial.role}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   );
