@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight" data-testid="hero-headline">
-              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">The Smartest</span><br />
+              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">The Smart</span><br />
               <span className="bg-gradient-to-r from-vibrant-blue to-vibrant-green bg-clip-text text-transparent">Way to Train</span>
             </h1>
             
