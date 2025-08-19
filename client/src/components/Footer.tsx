@@ -18,29 +18,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-6 max-w-md text-center" data-testid="footer-description">
               The smartest way to train. Track your wellness, recovery, and performance with the tools that serious athletes trust.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-white transition-colors"
-                data-testid="footer-social-twitter"
-              >
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-white transition-colors"
-                data-testid="footer-social-instagram"
-              >
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-white transition-colors"
-                data-testid="footer-social-youtube"
-              >
-                <Youtube className="h-6 w-6" />
-              </a>
-            </div>
+            
           </div>
           
           <div>
