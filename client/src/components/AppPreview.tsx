@@ -10,7 +10,7 @@ export default function AppPreview() {
           <h2 className="text-4xl sm:text-5xl font-black mb-6 text-white" data-testid="preview-headline">
             See It In Action
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed" data-testid="preview-description">
+          <p className="text-gray-300 max-w-3xl mx-auto text-[18px] mt-[-10px] mb-[-10px] pt-[0px] pb-[0px]" data-testid="preview-description">
             Experience the power of comprehensive performance tracking. From wellness monitoring to strength tracking, every feature is designed with athletes in mind.
           </p>
         </div>
