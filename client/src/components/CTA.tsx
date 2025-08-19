@@ -24,7 +24,7 @@ export default function CTA() {
         <div className="flex items-center justify-center text-blue-50">
           <div className="flex items-center space-x-2" data-testid="cta-feature-privacy">
             <Lock className="h-5 w-5" />
-            <span>Your Data Stays Private</span>
+            <span className="text-[14px]">Your Data Stays Private</span>
           </div>
         </div>
       </div>
