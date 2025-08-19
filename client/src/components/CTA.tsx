@@ -3,7 +3,7 @@ import { Download, Mail, Check, Lock } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section id="download" className="py-24 bg-gradient-to-r from-vibrant-blue to-vibrant-green">
+    <section id="download" className="py-24 bg-gradient-to-r from-vibrant-blue to-vibrant-green pt-[30px] pb-[30px]">
       <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-black mb-6 text-white" data-testid="cta-headline">
           Ready to Train Smarter?
