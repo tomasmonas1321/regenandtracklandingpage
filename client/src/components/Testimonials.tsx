@@ -32,9 +32,7 @@ export default function Testimonials() {
     <section className="py-24 bg-navy-light pt-[89px] pb-[89px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="sm:text-5xl font-black mb-6 text-white text-[32px]" data-testid="testimonials-headline">
-            Built for Athletes, By Coaches
-          </h2>
+          <h2 className="sm:text-5xl font-black mb-6 text-white text-[32px]" data-testid="testimonials-headline">Built for Athletes,  By Coaches</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8" data-testid="testimonials-description">
             For the serious athlete, data is everything. Regen & Track gives you the tools to track your progress, optimize your recovery, and unleash your inner champion. All for free.
           </p>
