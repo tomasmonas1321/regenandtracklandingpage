@@ -61,7 +61,7 @@ export default function AppPreview() {
                 Performance Analytics
               </h3>
               <p className="text-gray-300 mb-6" data-testid="preview-analytics-description">
-                Visualize trends, identify patterns, and get actionable insights to optimize your training cycles.
+                Visualize trends, identify patterns, and get actionable insights to optimize your training.
               </p>
             </div>
             <div className="space-y-3">
