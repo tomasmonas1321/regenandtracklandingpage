@@ -31,7 +31,7 @@ export default function Hero() {
               Track what matters, get actionable insights, and unlock your true potential.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+            <div className="flex justify-center lg:justify-start mb-12">
               <Button
                 onClick={scrollToDownload}
                 size="lg"
@@ -40,16 +40,6 @@ export default function Hero() {
               >
                 <Download className="mr-3 h-5 w-5" />
                 Get Regen & Track for Free
-              </Button>
-              
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-gray-600 hover:border-gray-400 bg-transparent text-white px-8 py-6 text-lg"
-                data-testid="hero-secondary-cta"
-              >
-                <Play className="mr-3 h-5 w-5" />
-                Watch Demo
               </Button>
             </div>
 
