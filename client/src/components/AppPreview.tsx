@@ -5,7 +5,7 @@ import previewRecovery from "@assets/image_1755601850599.png";
 export default function AppPreview() {
   return (
     <section id="preview" className="py-24 bg-gradient-to-br from-navy via-purple-950 to-navy-light pt-[57px] pb-[57px]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[0px] pb-[0px] mt-[-35px] mb-[-35px]">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-black mb-6 text-white" data-testid="preview-headline">
             See It In Action
