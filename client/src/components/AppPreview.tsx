@@ -65,7 +65,7 @@ export default function AppPreview() {
             <div className="space-y-3">
               <div className="bg-blue-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="analytics-metric-sleep">
                 <span className="text-gray-300">Weekly Avg Sleep</span>
-                <span className="text-vibrant-green font-semibold">8.2 hrs</span>
+                <span className="text-vibrant-green font-semibold">8.1 hrs</span>
               </div>
               <div className="bg-blue-900/50 p-3 rounded-lg flex justify-between items-center" data-testid="analytics-metric-recovery">
                 <span className="text-gray-300">Recovery Score</span>
