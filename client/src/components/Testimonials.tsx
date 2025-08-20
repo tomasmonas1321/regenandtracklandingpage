@@ -33,7 +33,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="sm:text-5xl font-black mb-6 text-white text-[32px]" data-testid="testimonials-headline">Built for Athletes,  By Coaches</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed pt-[0px] pb-[0px] mt-[16px] mb-[16px]" data-testid="testimonials-description">If you are serious athlete, data is important for you. Regen & Track gives you the tools to track your progress, optimize your recovery, and unleash your inner champion. All for free.</p>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed pt-[0px] pb-[0px] mt-[16px] mb-[16px]" data-testid="testimonials-description">If you are serious athlete, data is important tor you. Regen & Track gives you the tools to track your progress, optimize your recovery, and unleash your inner champion. All for free.</p>
         </div>
 
         {/* Stats */}
