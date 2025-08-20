@@ -1,8 +1,19 @@
 {
+  "buildCommand": "npm run build",
+  "builds": [
+    {
+      "src": "client/index.html",
+      "use": "@vercel/static-build"
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/server/api"
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/client/dist/public/$1"
     }
   ]
 }
