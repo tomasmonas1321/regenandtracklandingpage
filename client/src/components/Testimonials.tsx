@@ -43,7 +43,7 @@ export default function Testimonials() {
             <div className="text-gray-300">Active Athletes</div>
           </div>
           <div className="text-center" data-testid="stat-data-points">
-            <div className="text-4xl font-black text-vibrant-orange mb-2">500K+</div>
+            <div className="text-4xl font-black text-vibrant-orange mb-2">50K+</div>
             <div className="text-gray-300">Data Points Captured</div>
           </div>
           <div className="text-center" data-testid="stat-performance">
