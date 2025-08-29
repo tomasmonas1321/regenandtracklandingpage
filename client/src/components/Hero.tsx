@@ -34,7 +34,7 @@ export default function Hero() {
                   data-testid="hero-primary-cta"
                 >
                   <Play className="mr-3 h-5 w-5" />
-                  Launch App
+                  Download the App
                 </Button>
               </a>
             </div>
