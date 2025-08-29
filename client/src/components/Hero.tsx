@@ -1,13 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Download, Play, Check, Shield, Smartphone } from "lucide-react";
+import { Play, Check, Shield, Smartphone } from "lucide-react";
 import heroScreenshot1 from "@assets/image_1755602695785.png";
 
 export default function Hero() {
-  const scrollToDownload = () => {
-    const element = document.getElementById("download");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="min-h-screen bg-gradient-to-br from-navy via-purple-950 to-navy-light relative overflow-hidden">
       {/* Animated background elements */}
@@ -32,15 +27,16 @@ export default function Hero() {
             </p>
             
             <div className="flex justify-center lg:justify-start mb-12">
-              <Button
-                onClick={scrollToDownload}
-                size="lg"
-                className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-8 py-6 text-lg font-semibold"
-                data-testid="hero-primary-cta"
-              >
-                <Download className="mr-3 h-5 w-5" />
-                Get Regen & Track for Free
-              </Button>
+              <a href="https://app.regenandtrack.com">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-8 py-6 text-lg font-semibold"
+                  data-testid="hero-primary-cta"
+                >
+                  <Play className="mr-3 h-5 w-5" />
+                  Launch App
+                </Button>
+              </a>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start space-x-8 text-sm text-gray-400">
