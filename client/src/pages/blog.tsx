@@ -22,7 +22,7 @@ export default function Blog() {
       excerpt: "When you eat can be just as important as what you eat. Learn about pre-workout, post-workout, and daily nutrition strategies that support peak athletic performance.",
       author: "Admin",
       date: "September 2, 2025",
-      readTime: ">5 min read",
+      readTime: "<5 min read",
       category: "Nutrition"
     },
     {
@@ -31,7 +31,7 @@ export default function Blog() {
       excerpt: "Mental training is just as crucial as physical preparation. Explore evidence-based techniques for developing mental toughness and maintaining focus under pressure.",
       author: "Admin",
       date: "August 30, 2025",
-      readTime: "7 min read",
+      readTime: "<5 min read",
       category: "Mental Performance"
     },
     {
@@ -40,7 +40,7 @@ export default function Blog() {
       excerpt: "Quality sleep is when your body repairs and adapts to training stress. Learn advanced sleep strategies that go beyond duration to maximize recovery and performance.",
       author: "Admin",
       date: "August 27, 2025",
-      readTime: "9 min read",
+      readTime: "<5 min read",
       category: "Recovery Science"
     },
     {
@@ -49,7 +49,7 @@ export default function Blog() {
       excerpt: "Understanding training load, internal vs external load, and the importance of wellness monitoring for optimizing performance and preventing overtraining in athletes.",
       author: "Admin",
       date: "September 10, 2025",
-      readTime: "6 min read",
+      readTime: "<5 min read",
       category: "Training Load"
     }
   ];

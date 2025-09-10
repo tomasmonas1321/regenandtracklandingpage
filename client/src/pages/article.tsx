@@ -17,7 +17,7 @@ export default function Article() {
       excerpt: "Understanding the physiological processes that occur during recovery can help you optimize your training and performance. Learn about the latest research on sleep, nutrition, and active recovery.",
       author: "Admin",
       date: "September 8, 2025",
-      readTime: "8 min read",
+      readTime: "<5 min read",
       category: "Recovery Science",
       content: `
         <h2>Introduction</h2>
@@ -79,7 +79,7 @@ export default function Article() {
       excerpt: "When you eat can be just as important as what you eat. Learn about pre-workout, post-workout, and daily nutrition strategies that support peak athletic performance.",
       author: "Admin",
       date: "September 2, 2025",
-      readTime: "10 min read",
+      readTime: "<5 min read",
       category: "Nutrition",
       content: `
         <h2>The Art and Science of Nutrient Timing</h2>
@@ -193,7 +193,7 @@ export default function Article() {
       excerpt: "Mental training is just as crucial as physical preparation. Explore evidence-based techniques for developing mental toughness and maintaining focus under pressure.",
       author: "Admin",
       date: "August 30, 2025",
-      readTime: "7 min read",
+      readTime: "<5 min read",
       category: "Mental Performance",
       content: `
         <h2>The Mind-Body Connection in Athletic Performance</h2>
@@ -346,7 +346,7 @@ export default function Article() {
       excerpt: "Quality sleep is when your body repairs and adapts to training stress. Learn advanced sleep strategies that go beyond duration to maximize recovery and performance.",
       author: "Admin",
       date: "August 27, 2025",
-      readTime: "9 min read",
+      readTime: "<5 min read",
       category: "Recovery Science",
       content: `
         <h2>Why Sleep Quality Matters More Than Quantity</h2>
@@ -544,7 +544,7 @@ export default function Article() {
       excerpt: "Understanding training load, internal vs external load, and the importance of wellness monitoring for optimizing performance and preventing overtraining in athletes.",
       author: "Admin",
       date: "September 10, 2025",
-      readTime: "6 min read",
+      readTime: "<5 min read",
       category: "Training Load",
       content: `
         <h2>What is Training Load?</h2>
