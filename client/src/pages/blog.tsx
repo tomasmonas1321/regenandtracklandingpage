@@ -12,7 +12,7 @@ export default function Blog() {
       excerpt: "Understanding the physiological processes that occur during recovery can help you optimize your training and performance. Learn about the latest research on sleep, nutrition, and active recovery.",
       author: "Admin",
       date: "September 8, 2025",
-      readTime: "8 min read",
+      readTime: "<5 min read",
       category: "Recovery Science",
       featured: true
     },
@@ -22,7 +22,7 @@ export default function Blog() {
       excerpt: "When you eat can be just as important as what you eat. Learn about pre-workout, post-workout, and daily nutrition strategies that support peak athletic performance.",
       author: "Admin",
       date: "September 2, 2025",
-      readTime: "10 min read",
+      readTime: ">5 min read",
       category: "Nutrition"
     },
     {
