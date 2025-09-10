@@ -636,10 +636,6 @@ export default function Article() {
               Back to Blog
             </Button>
           </Link>
-          <Button variant="ghost" className="text-vibrant-blue hover:text-white" data-testid="share-article">
-            <Share className="w-4 h-4 mr-2" />
-            Share this article
-          </Button>
         </div>
       </div>
       <Footer />
