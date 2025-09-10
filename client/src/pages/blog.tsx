@@ -29,7 +29,7 @@ export default function Blog() {
       id: 4,
       title: "Building Mental Resilience in Competitive Sports",
       excerpt: "Mental training is just as crucial as physical preparation. Explore evidence-based techniques for developing mental toughness and maintaining focus under pressure.",
-      author: "Dr. James Liu",
+      author: "Admin",
       date: "August 30, 2025",
       readTime: "7 min read",
       category: "Mental Performance"
@@ -38,7 +38,7 @@ export default function Blog() {
       id: 5,
       title: "Sleep Optimization for Athletes: Beyond Just Getting 8 Hours",
       excerpt: "Quality sleep is when your body repairs and adapts to training stress. Learn advanced sleep strategies that go beyond duration to maximize recovery and performance.",
-      author: "Dr. Sarah Chen",
+      author: "Admin",
       date: "August 27, 2025",
       readTime: "9 min read",
       category: "Recovery Science"
