@@ -181,28 +181,6 @@ export default function Blog() {
           ))}
         </div>
 
-        {/* Newsletter Signup */}
-        <Card className="bg-gradient-to-r from-navy-light to-purple-900/30 border-purple-900/30" data-testid="newsletter-signup">
-          <CardHeader className="text-center">
-            <CardTitle className="text-white text-2xl">Stay Updated</CardTitle>
-            <CardDescription className="text-gray-300">
-              Get the latest insights and tips delivered directly to your inbox
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-2 bg-navy border border-purple-900/30 rounded-md text-white placeholder-gray-400 focus:outline-none focus:border-vibrant-blue"
-                data-testid="newsletter-email"
-              />
-              <Button className="bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="newsletter-subscribe">
-                Subscribe
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
 
         {/* Back to Home */}
         <div className="text-center mt-12">
