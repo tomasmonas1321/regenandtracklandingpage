@@ -118,7 +118,7 @@ export default function Blog() {
                   </div>
                 </div>
                 <Link href={`/blog/${post.id}`}>
-                  <Button className="bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="featured-read-btn">
+                  <Button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 bg-gradient-to-r from-vibrant-blue to-vibrant-green text-[12px] pl-[0px] pr-[0px] pt-[7px] pb-[7px] ml-[0px] mr-[0px]" data-testid="featured-read-btn">
                     Read Article
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
