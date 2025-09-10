@@ -7,6 +7,15 @@ import { Link } from "wouter";
 export default function Blog() {
   const blogPosts = [
     {
+      id: 6,
+      title: "Workload Management Basics",
+      excerpt: "Understanding training load, internal vs external load, and the importance of wellness monitoring for optimizing performance and preventing overtraining in athletes.",
+      author: "Admin",
+      date: "September 10, 2025",
+      readTime: "<5 min read",
+      category: "Training Load"
+    },
+    {
       id: 1,
       title: "The Science Behind Athletic Recovery: What Every Athlete Should Know",
       excerpt: "Understanding the physiological processes that occur during recovery can help you optimize your training and performance. Learn about the latest research on sleep, nutrition, and active recovery.",
@@ -41,15 +50,6 @@ export default function Blog() {
       date: "August 27, 2025",
       readTime: "<5 min read",
       category: "Recovery Science"
-    },
-    {
-      id: 6,
-      title: "Workload Management Basics",
-      excerpt: "Understanding training load, internal vs external load, and the importance of wellness monitoring for optimizing performance and preventing overtraining in athletes.",
-      author: "Admin",
-      date: "September 10, 2025",
-      readTime: "<5 min read",
-      category: "Training Load"
     },
     {
       id: 7,
