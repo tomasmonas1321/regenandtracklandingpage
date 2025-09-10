@@ -815,7 +815,7 @@ export default function Article() {
         {/* Article Actions */}
         <div className="flex flex-col sm:flex-row gap-4 justify-between items-center">
           <Link href="/blog">
-            <Button variant="outline" className="border-purple-900/30 text-white hover:bg-purple-900/20" data-testid="back-to-blog-bottom">
+            <Button variant="outline" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border hover:text-accent-foreground h-10 px-4 py-2 border-purple-900/30 text-white hover:bg-purple-900/20 bg-[#23252f]" data-testid="back-to-blog-bottom">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
             </Button>
