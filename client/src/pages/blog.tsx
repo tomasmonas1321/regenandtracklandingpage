@@ -42,19 +42,11 @@ export default function Blog() {
       date: "August 27, 2025",
       readTime: "9 min read",
       category: "Recovery Science"
-    },
-    {
-      id: 6,
-      title: "Technology in Sports: How Wearables Are Changing Athletic Training",
-      excerpt: "From smartwatches to advanced sensors, technology is revolutionizing how athletes train and recover. Discover the tools that are making the biggest impact.",
-      author: "Tech Team",
-      date: "August 24, 2025",
-      readTime: "5 min read",
-      category: "Technology"
     }
+   
   ];
 
-  const categories = ["All", "Recovery Science", "Performance Metrics", "Nutrition", "Mental Performance", "Technology"];
+  const categories = ["All", "Recovery Science", "Nutrition", "Mental Performance", ];
 
   return (
     <div className="bg-navy text-white min-h-screen">
