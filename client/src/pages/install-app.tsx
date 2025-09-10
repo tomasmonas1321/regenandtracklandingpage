@@ -129,12 +129,6 @@ export default function InstallApp() {
 
         {/* System Requirements */}
         <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="requirements-card">
-          <CardHeader>
-            <CardTitle className="text-white text-2xl">System Requirements</CardTitle>
-            <CardDescription className="text-gray-300">
-              Ensure your device meets these minimum requirements
-            </CardDescription>
-          </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
