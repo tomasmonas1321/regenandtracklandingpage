@@ -109,10 +109,12 @@ export default function Blog() {
                     {post.readTime}
                   </div>
                 </div>
-                <Button className="bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="featured-read-btn">
-                  Read Article
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link href={`/blog/${post.id}`}>
+                  <Button className="bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="featured-read-btn">
+                    Read Article
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -151,10 +153,12 @@ export default function Blog() {
                       {post.date}
                     </div>
                   </div>
-                  <Button variant="ghost" size="sm" className="text-vibrant-blue hover:text-white" data-testid={`post-read-btn-${post.id}`}>
-                    Read More
-                    <ArrowRight className="w-3 h-3 ml-1" />
-                  </Button>
+                  <Link href={`/blog/${post.id}`}>
+                    <Button variant="ghost" size="sm" className="text-vibrant-blue hover:text-white" data-testid={`post-read-btn-${post.id}`}>
+                      Read More
+                      <ArrowRight className="w-3 h-3 ml-1" />
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
