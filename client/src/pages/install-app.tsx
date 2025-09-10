@@ -116,7 +116,6 @@ export default function InstallApp() {
               <ul className="text-gray-300 space-y-2 text-sm">
                 <li data-testid="benefit-1">• Works offline - track your workouts even without internet</li>
                 <li data-testid="benefit-2">• Faster loading times and smoother performance</li>
-                <li data-testid="benefit-3">• Push notifications for workout reminders</li>
                 <li data-testid="benefit-4">• Home screen shortcut for quick access</li>
                 <li data-testid="benefit-5">• App-like experience without app store downloads</li>
               </ul>
