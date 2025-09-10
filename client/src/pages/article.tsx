@@ -608,6 +608,53 @@ export default function Article() {
         
         <p>Start implementing basic load monitoring today. Track your training, monitor your wellness, and make data-driven decisions about your training program. Your future self will thank you.</p>
       `
+    },
+    "7": {
+      id: 7,
+      title: "Are You Really Ready to Train? Listen to Your Body's Data",
+      excerpt: "Learn how the Hooper and Mackinnon wellness scale can help you track subjective markers like sleep, fatigue, and stress to optimize your training decisions and prevent burnout.",
+      author: "Admin",
+      date: "September 10, 2025",
+      readTime: "5 min read",
+      category: "Wellness Tracking",
+      content: `
+        <h2>Introduction</h2>
+        <p>In the athletic world, we're obsessed with data. We track our kilometers, reps, watts, heart rate etc. But what about the most important data source of all—how we actually feel? Pushing through a tough session when your body isn't ready is a fast track to burnout, injury, and frustration. This is where understanding your subjective markers becomes a game-changer.</p>
+        
+        <h2>The Hooper and Mackinnon Scale: Your Daily Body Check-In 📝</h2>
+        <p>So, how can you consistently measure something as subjective as "how you feel"? Enter the Hooper and Mackinnon scale (modified), a simple yet powerful wellness questionnaire designed for athletes. Developed by sports scientists, this tool provides a quick snapshot of your body's readiness to train by asking you to rate a few key areas:</p>
+        
+        <ul>
+          <li><strong>Sleep Quality:</strong> How well did you sleep last night?</li>
+          <li><strong>Sleep Length:</strong> How many hours did you sleep last night?</li>
+          <li><strong>Fatigue:</strong> How tired do you feel today?</li>
+          <li><strong>Stress Levels:</strong> How stressed are you feeling?</li>
+          <li><strong>Muscle Soreness (DOMS):</strong> How sore are your muscles?</li>
+        </ul>
+        
+        <p>By rating these simple factors, you create a personal "wellness score." Think of it as your body's daily readiness report. A low score might be a red flag, suggesting you need more recovery, while a high score can give you the green light to tackle a tough session with confidence.</p>
+        
+        <h2>Why Subjective Markers Are Your Secret Weapon 🚀</h2>
+        <p>Tracking these feelings isn't about skipping hard work; it's about training smarter. Your subjective wellness data provides crucial context to your objective training plan.</p>
+        
+        <p>Imagine your training plan calls for a high-intensity interval session. Your GPS watch is charged and ready to go. But you slept terribly for only a few hours, you're stressed from work, and your legs are still sore from your last workout. Pushing through might feel heroic, but it's more likely to lead to poor performance and down the line, increase your risk of injury.</p>
+        
+        <p>The Hooper and Mackinnon model helps you connect the dots. It transforms vague feelings into actionable insights. By noticing trends—for instance, that your stress levels always spike on Thursdays or your sleep suffers after late-night training—you can adjust your schedule, prioritize recovery, and ultimately perform better. This proactive approach helps prevent non-functional overreaching and overtraining syndrome, keeping you healthy and consistent.</p>
+        
+        <h2>How Regen and Track Makes It Easy</h2>
+        <p>We know you'd rather be training than filling out complicated forms. That's why we've built a modified and intuitive Hooper and Mackinnon questionnaire right into the app.</p>
+        
+        <p>In less than 20 seconds each morning, you can log your wellness scores. Our app tracks your responses over time, helping you visualize trends and understand the critical relationship between your training, lifestyle, your recovery, and your performance. It's the simplest way to start listening to your body and taking control of your athletic journey.</p>
+        
+        <blockquote>
+          "Your body is constantly giving you feedback. The question is: are you listening?"
+        </blockquote>
+        
+        <h2>Conclusion</h2>
+        <p>Ready to stop training blind? Start your day with our wellness check-in and unlock a smarter, more sustainable way to achieve your goals.</p>
+        
+        <p>Understanding your subjective wellness markers through tools like the Hooper and Mackinnon scale isn't just about avoiding bad training days—it's about maximizing the good ones. When you train in harmony with your body's signals, you'll find yourself more consistent, more resilient, and ultimately more successful in reaching your athletic goals.</p>
+      `
     }
   };
   

@@ -51,10 +51,19 @@ export default function Blog() {
       date: "September 10, 2025",
       readTime: "<5 min read",
       category: "Training Load"
+    },
+    {
+      id: 7,
+      title: "Are You Really Ready to Train? Listen to Your Body's Data",
+      excerpt: "Learn how the Hooper and Mackinnon wellness scale can help you track subjective markers like sleep, fatigue, and stress to optimize your training decisions and prevent burnout.",
+      author: "Admin",
+      date: "September 10, 2025",
+      readTime: "<5 min read",
+      category: "Wellness Tracking"
     }
   ];
 
-  const categories = ["Recovery Science", "Nutrition", "Mental Performance", "Training Load"];
+  const categories = ["Recovery Science", "Nutrition", "Mental Performance", "Training Load", "Wellness Tracking"];
 
   return (
     <div className="bg-navy text-white min-h-screen">
