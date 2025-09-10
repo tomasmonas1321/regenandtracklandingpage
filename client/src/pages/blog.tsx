@@ -83,10 +83,7 @@ export default function Blog() {
             <Button
               key={category}
               variant={category === "All" ? "default" : "outline"}
-              className={category === "All" 
-                ? "bg-gradient-to-r from-vibrant-blue to-vibrant-green" 
-                : "border-purple-900/30 text-white hover:bg-purple-900/20"
-              }
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border hover:text-accent-foreground h-10 px-4 py-2 border-purple-900/30 text-white hover:bg-purple-900/20 bg-[#1e9df1]"
               data-testid={`category-${category.toLowerCase().replace(/\s+/g, '-')}`}
             >
               {category}
