@@ -18,7 +18,7 @@ export default function InstallApp() {
             How to Install the App
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto" data-testid="install-description">
-            Get Regen & Track on your device as a Progressive Web App (PWA) and start optimizing your athletic performance today
+            Get Regen & Track on your device as a Progressive Web App (PWA) and start optimizing your athletic performance today!
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export default function InstallApp() {
           </CardHeader>
           <CardContent className="p-6 pt-0 text-center text-[14px]">
             <p className="text-gray-300 leading-relaxed">
-              A Progressive Web App (PWA) is a web application that works like a native mobile app. You can install it directly from your browser to your home screen on any device - phone, tablet, or computer. It works offline, sends notifications, and feels just like a regular app, but without needing to download it from an app store.
+              A Progressive Web App (PWA) is a web application that works like a native mobile app. You can install it directly from your browser to your home screen on any device - phone, tablet, or computer. It works offline, can send notifications, and feels just like a regular app, but without needing to download it from an app store.
             </p>
           </CardContent>
         </Card>
