@@ -79,9 +79,7 @@ export default function Blog() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4" data-testid="blog-title">
             Regen & Track Blog
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto" data-testid="blog-description">
-            Insights, tips, and research to help you optimize your athletic performance and recovery
-          </p>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto" data-testid="blog-description">Insights & tips to help you optimize your athletic performance and recovery</p>
         </div>
 
 
