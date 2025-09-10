@@ -1,6 +1,14 @@
 # Overview
 
-This is a full-stack athletic performance tracking application called "Regen & Track" built with a modern TypeScript stack. The application provides comprehensive wellness monitoring, recovery tracking, and performance analytics for serious athletes. The frontend is a React-based landing page showcasing the app's features, while the backend is prepared for API development with database integration for user management and data tracking.
+This is a full-stack athletic performance tracking application called "Regen & Track" built with a modern TypeScript stack. The application provides comprehensive wellness monitoring, recovery tracking, and performance analytics for serious athletes. The frontend is a React-based multi-page application featuring a main landing page, installation guide, and blog section, while the backend is prepared for API development with database integration for user management and data tracking.
+
+# Recent Changes
+
+**September 10, 2025**: Added multi-page routing functionality with two new subpages:
+- **Install App Page** (`/install-app`): Comprehensive installation guide for mobile (iOS/Android) and desktop platforms with system requirements
+- **Blog Page** (`/blog`): Content hub featuring articles on athletic performance, recovery science, nutrition, and mental training
+- **Routing Implementation**: Integrated wouter routing library to enable navigation between pages
+- **Navigation Updates**: Enhanced navigation component with conditional rendering based on current route
 
 # User Preferences
 
@@ -14,7 +22,8 @@ Preferred communication style: Simple, everyday language.
 - **Styling**: Tailwind CSS with custom athletic theme (navy, purple color scheme)
 - **State Management**: TanStack React Query for server state management
 - **Design Pattern**: Component-based architecture with reusable UI components
-- **Layout**: Single-page application with smooth scrolling navigation between sections
+- **Routing**: Wouter for client-side routing with multiple pages
+- **Layout**: Multi-page application with dedicated pages for different content
 
 ## Backend Architecture
 - **Runtime**: Node.js with Express.js framework
@@ -33,7 +42,10 @@ Preferred communication style: Simple, everyday language.
 
 ## Project Structure
 - **Monorepo Pattern**: Shared types and schemas in `/shared` directory
-- **Client**: React application in `/client` with component-based organization  
+- **Client**: React application in `/client` with component-based organization and multi-page routing
+  - **Pages**: Home, Install App, Blog, and 404 Not Found pages in `/client/src/pages`
+  - **Components**: Reusable UI components in `/client/src/components`
+  - **Routing**: Client-side routing using wouter for seamless navigation
 - **Server**: Express API in `/server` with modular routing
 - **Build Strategy**: Separate builds for client (Vite) and server (esbuild)
 
