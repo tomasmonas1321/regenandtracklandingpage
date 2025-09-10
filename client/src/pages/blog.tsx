@@ -13,8 +13,7 @@ export default function Blog() {
       author: "Admin",
       date: "September 8, 2025",
       readTime: "<5 min read",
-      category: "Recovery Science",
-      featured: true
+      category: "Recovery Science"
     },
     {
       id: 3,
@@ -91,55 +90,10 @@ export default function Blog() {
           ))}
         </div>
 
-        {/* Featured Post */}
-        {blogPosts.filter(post => post.featured).map((post) => (
-          <Card key={post.id} className="bg-navy-light border-purple-900/30 mb-8" data-testid="featured-post">
-            <CardHeader>
-              <div className="flex items-center gap-2 mb-2">
-                <Badge className="bg-gradient-to-r from-vibrant-blue to-vibrant-green text-white">
-                  Featured
-                </Badge>
-                <Badge variant="outline" className="border-purple-900/30 text-gray-300">
-                  {post.category}
-                </Badge>
-              </div>
-              <CardTitle className="text-white text-2xl md:text-3xl hover:text-vibrant-blue transition-colors cursor-pointer">
-                {post.title}
-              </CardTitle>
-              <CardDescription className="text-gray-300 text-lg">
-                {post.excerpt}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4 text-sm text-gray-400">
-                  <div className="flex items-center" data-testid="featured-author">
-                    <User className="h-4 w-4 mr-1" />
-                    {post.author}
-                  </div>
-                  <div className="flex items-center" data-testid="featured-date">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    {post.date}
-                  </div>
-                  <div className="flex items-center" data-testid="featured-read-time">
-                    <Clock className="h-4 w-4 mr-1" />
-                    {post.readTime}
-                  </div>
-                </div>
-                <Link href={`/blog/${post.id}`}>
-                  <Button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 bg-gradient-to-r from-vibrant-blue to-vibrant-green text-[12px] pl-[0px] pr-[0px] pt-[7px] pb-[7px] ml-[0px] mr-[0px]" data-testid="featured-read-btn">
-                    Read Article
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
 
         {/* Blog Posts Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {blogPosts.filter(post => !post.featured).map((post) => (
+          {blogPosts.map((post) => (
             <Card key={post.id} className="bg-navy-light border-purple-900/30 hover:border-purple-600/50 transition-colors cursor-pointer" data-testid={`blog-post-${post.id}`}>
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
