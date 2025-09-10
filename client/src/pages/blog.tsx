@@ -46,7 +46,7 @@ export default function Blog() {
    
   ];
 
-  const categories = ["All", "Recovery Science", "Nutrition", "Mental Performance", ];
+  const categories = ["Recovery Science", "Nutrition", "Mental Performance"];
 
   return (
     <div className="bg-navy text-white min-h-screen">
