@@ -10,7 +10,7 @@ export default function Blog() {
       id: 1,
       title: "The Science Behind Athletic Recovery: What Every Athlete Should Know",
       excerpt: "Understanding the physiological processes that occur during recovery can help you optimize your training and performance. Learn about the latest research on sleep, nutrition, and active recovery.",
-      author: "Dr. Sarah Chen",
+      author: "Admin",
       date: "September 8, 2025",
       readTime: "8 min read",
       category: "Recovery Science",
@@ -20,7 +20,7 @@ export default function Blog() {
       id: 3,
       title: "Nutrition Timing for Optimal Recovery and Performance",
       excerpt: "When you eat can be just as important as what you eat. Learn about pre-workout, post-workout, and daily nutrition strategies that support peak athletic performance.",
-      author: "Emma Thompson, RD",
+      author: "Admin",
       date: "September 2, 2025",
       readTime: "10 min read",
       category: "Nutrition"
@@ -109,12 +109,10 @@ export default function Blog() {
                     {post.readTime}
                   </div>
                 </div>
-                <Link href={`/blog/${post.id}`}>
-                  <Button className="bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="featured-read-btn">
-                    Read Article
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
+                <Button className="bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="featured-read-btn">
+                  Read Article
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
               </div>
             </CardContent>
           </Card>
@@ -153,12 +151,10 @@ export default function Blog() {
                       {post.date}
                     </div>
                   </div>
-                  <Link href={`/blog/${post.id}`}>
-                    <Button variant="ghost" size="sm" className="text-vibrant-blue hover:text-white" data-testid={`post-read-btn-${post.id}`}>
-                      Read More
-                      <ArrowRight className="w-3 h-3 ml-1" />
-                    </Button>
-                  </Link>
+                  <Button variant="ghost" size="sm" className="text-vibrant-blue hover:text-white" data-testid={`post-read-btn-${post.id}`}>
+                    Read More
+                    <ArrowRight className="w-3 h-3 ml-1" />
+                  </Button>
                 </div>
               </CardContent>
             </Card>
