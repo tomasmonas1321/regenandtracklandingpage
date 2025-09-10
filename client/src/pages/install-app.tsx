@@ -130,25 +130,14 @@ export default function InstallApp() {
         {/* System Requirements */}
         <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="requirements-card">
           <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Mobile Requirements</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li data-testid="req-ios">• iOS 14.0 or later</li>
-                  <li data-testid="req-android">• Android 8.0 (API level 26) or later</li>
-                  <li data-testid="req-storage">• 50MB available storage</li>
-                  <li data-testid="req-internet">• Internet connection required</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Browser Requirements</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li data-testid="req-chrome">• Chrome 88+ or Safari 14+</li>
-                  <li data-testid="req-firefox">• Firefox 85+ or Edge 88+</li>
-                  <li data-testid="req-javascript">• JavaScript enabled</li>
-                  <li data-testid="req-cookies">• Cookies enabled for best experience</li>
-                </ul>
-              </div>
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-3">Browser Requirements</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li data-testid="req-chrome">• Chrome 88+ or Safari 14+</li>
+                <li data-testid="req-firefox">• Firefox 85+ or Edge 88+</li>
+                <li data-testid="req-javascript">• JavaScript enabled</li>
+                <li data-testid="req-cookies">• Cookies enabled for best experience</li>
+              </ul>
             </div>
           </CardContent>
         </Card>
