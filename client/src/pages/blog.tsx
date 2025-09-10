@@ -59,6 +59,15 @@ export default function Blog() {
       date: "September 10, 2025",
       readTime: "<5 min read",
       category: "Wellness Tracking"
+    },
+    {
+      id: 8,
+      title: "Stop Juggling. Start Dominating. Your Integrated Path to Peak Performance is Here",
+      excerpt: "Discover how GPC-Performance's integrated approach eliminates fragmented training by unifying strength conditioning, nutrition, and physiotherapy under one expert roof.",
+      author: "GPC-Performance",
+      date: "September 10, 2025",
+      readTime: "<5 min read",
+      category: "Performance Training"
     }
   ];
 

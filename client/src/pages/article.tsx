@@ -655,6 +655,72 @@ export default function Article() {
         
         <p>Understanding your subjective wellness markers through tools like the Hooper and Mackinnon scale isn't just about avoiding bad training days—it's about maximizing the good ones. When you train in harmony with your body's signals, you'll find yourself more consistent, more resilient, and ultimately more successful in reaching your athletic goals.</p>
       `
+    },
+    "8": {
+      id: 8,
+      title: "Stop Juggling. Start Dominating. Your Integrated Path to Peak Performance is Here",
+      excerpt: "Discover how GPC-Performance's integrated approach eliminates fragmented training by unifying strength conditioning, nutrition, and physiotherapy under one expert roof.",
+      author: "GPC-Performance",
+      date: "September 10, 2025",
+      readTime: "5 min read",
+      category: "Performance Training",
+      content: `
+        <h2>Introduction</h2>
+        <p>Every dedicated athlete—whether you're stepping onto the field for the first time or competing on the world stage—shares the same drive: the relentless pursuit of your true potential. You know that success isn't just about training harder; it's about training smarter.</p>
+        
+        <p>But what happens when your support system is fragmented?</p>
+        
+        <p>Your strength coach pushes you in the gym. Your nutritionist gives you a generic meal plan. You only see a physiotherapist after an injury has already happened. Each expert operates in a silo, giving you conflicting advice that leaves you confused, frustrated, and stalled in your progress.</p>
+        
+        <p>At GPC-Performance, we eliminate the chaos. We believe that elite performance requires a unified strategy.</p>
+        
+        <div style="text-align: center; margin: 2rem 0;">
+          <img 
+            src="https://static.wixstatic.com/media/9a2559_83c8f7fd946d46d3adc50d49005f1e86~mv2.png/v1/fill/w_416,h_154,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/GPC%20Performance%20Logo%20Transparent.png" 
+            alt="GPC Performance Logo" 
+            style="max-width: 100%; height: auto;"
+          />
+        </div>
+        
+        <h2>Welcome to Your All-in-One Performance Hub</h2>
+        <p>At GPC-Performance, our coaches and practitioners bring over 60 years of collective experience to the forefront of athletic development. We've built our reputation on a simple, powerful principle: integration. We are your one-stop shop for athletic excellence, bringing together every critical element of performance under a single, expert roof.</p>
+        
+        <p>Our comprehensive approach ensures that every aspect of your training, nutrition, and recovery works in perfect harmony.</p>
+        
+        <h3>1. World-Class Strength & Conditioning</h3>
+        <p>Our programs are the engine of your performance. We don't use cookie-cutter templates. We design bespoke strength and conditioning plans that are specific to the demands of your sport and your individual needs. We build resilient, powerful, and explosive athletes who are prepared not just to compete, but to dominate.</p>
+        
+        <h3>2. Precision Nutrition for Fuel and Recovery</h3>
+        <p>You can't out-train a bad diet. Our nutrition expert work directly with your to create a fueling strategy that supports your training load, accelerates recovery, and optimizes body composition. This isn't just about what to eat; it's about when and why, ensuring your body has exactly what it needs to adapt and excel.</p>
+        
+        <h3>3. Proactive Physiotherapy for Longevity</h3>
+        <p>Why wait for an injury to happen? Our physiotherapist is integrated into your programming from day one. We focus on optimizing your movement patterns, identifying potential weaknesses, and implementing corrective strategies before they become problems. We keep you on the field, performing at your best, season after season.</p>
+        
+        <h2>The GPC Difference: Proven Expertise in Action</h2>
+        <p>What truly sets us apart is how our expert teams collaborate for you.</p>
+        
+        <ul>
+          <li>Your physiotherapist's movement assessment directly informs your strength program.</li>
+          <li>Your training intensity dictates your nutritional requirements.</li>
+          <li>Your recovery data helps us fine-tune your next block of training.</li>
+        </ul>
+        
+        <p>This seamless, 360-degree approach removes the guesswork. You get a single, cohesive performance plan managed by a team with decades of experience helping athletes of all levels, in all sports, reach their peak.</p>
+        
+        <h2>Are You Ready to Unlock Your Potential?</h2>
+        <p>Stop wasting time and energy trying to piece together your own performance plan. It's time to work with a team that sees the complete picture. It's time to train with GPC-Performance.</p>
+        
+        <p>Whether you are an aspiring amateur or a seasoned professional, your journey to the next level starts here.</p>
+        
+        <blockquote>
+          "Integration isn't just our approach—it's our advantage. When every element of your performance works together, that's when breakthrough happens."
+        </blockquote>
+        
+        <h2>Take Action Today</h2>
+        <p>Visit us at <strong>www.gpc-performance.com</strong> to schedule your initial consultation and discover what a truly integrated performance program can do for you.</p>
+        
+        <p>Your potential is waiting. Stop juggling. Start dominating.</p>
+      `
     }
   };
   
