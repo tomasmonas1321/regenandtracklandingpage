@@ -182,7 +182,7 @@ export default function Blog() {
         {/* Back to Home */}
         <div className="text-center mt-12">
           <Link href="/">
-            <Button variant="outline" className="border-purple-900/30 text-white hover:bg-purple-900/20" data-testid="back-home-btn">
+            <Button variant="outline" className="border-purple-900/30 text-white hover:bg-purple-900/20 bg-[#1e9df1]" data-testid="back-home-btn">
               Back to Home
             </Button>
           </Link>
