@@ -5,7 +5,7 @@ export default function Features() {
     {
       icon: ClipboardList,
       title: "All-in-One Tracking",
-      description: "Your journal, wellness scores, recovery metrics, strength numbers, and fitness tests—all in one place.",
+      description: "Your journal, wellness scores, recovery metrics, strength numbers, and fitness tests—all in one place!",
       gradient: "from-vibrant-blue to-vibrant-green",
       borderColor: "border-purple-700/30",
       hoverColor: "hover:border-purple-500/50",
