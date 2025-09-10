@@ -17,15 +17,6 @@ export default function Blog() {
       featured: true
     },
     {
-      id: 2,
-      title: "Heart Rate Variability: Your Body's Performance Dashboard",
-      excerpt: "HRV metrics can provide valuable insights into your readiness to train. Discover how to interpret HRV data and use it to make informed decisions about your training intensity.",
-      author: "Coach Mike Rodriguez",
-      date: "September 5, 2025",
-      readTime: "6 min read",
-      category: "Performance Metrics"
-    },
-    {
       id: 3,
       title: "Nutrition Timing for Optimal Recovery and Performance",
       excerpt: "When you eat can be just as important as what you eat. Learn about pre-workout, post-workout, and daily nutrition strategies that support peak athletic performance.",
