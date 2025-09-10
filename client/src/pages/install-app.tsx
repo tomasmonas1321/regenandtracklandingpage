@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Download, CheckCircle, Smartphone, Monitor, Globe } from "lucide-react";
 import { Link } from "wouter";
 import pwaInstallImage from "@assets/pwa-install-example.png";
+import iosInstallImage from "@assets/image_1757515122918.png";
 
 export default function InstallApp() {
   const [selectedPlatform, setSelectedPlatform] = useState<'android' | 'ios'>('android');
@@ -94,10 +95,12 @@ export default function InstallApp() {
               )}
               {selectedPlatform === 'ios' && (
                 <>
-                  {/* Placeholder for iOS image - will be updated when user uploads the iOS installation graphic */}
-                  <div className="w-full max-w-3xl mx-auto h-64 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center" data-testid="ios-install-placeholder">
-                    <p className="text-gray-400">iOS installation image will be shown here</p>
-                  </div>
+                  <img 
+                    src={iosInstallImage} 
+                    alt="iOS PWA Installation Example showing Safari share menu with Add to Home Screen option" 
+                    className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+                    data-testid="ios-install-image"
+                  />
                   <p className="text-gray-400 text-sm mt-2 text-center">
                     Example: Installing Regen & Track as a PWA on iOS
                   </p>
