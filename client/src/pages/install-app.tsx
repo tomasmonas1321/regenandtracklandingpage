@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Download, Smartphone, Monitor, CheckCircle, ExternalLink } from "lucide-react";
+import { Download, CheckCircle, Smartphone, Monitor, Globe } from "lucide-react";
 import { Link } from "wouter";
+import pwaInstallImage from "@assets/pwa-install-example.png";
 
 export default function InstallApp() {
   return (
@@ -13,123 +14,119 @@ export default function InstallApp() {
             How to Install the App
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto" data-testid="install-description">
-            Get Regen & Track on your device and start optimizing your athletic performance today
+            Get Regen & Track on your device as a Progressive Web App (PWA) and start optimizing your athletic performance today
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Mobile Installation */}
-          <Card className="bg-navy-light border-purple-900/30" data-testid="mobile-install-card">
-            <CardHeader>
-              <div className="flex items-center space-x-3 mb-2">
-                <Smartphone className="h-8 w-8 text-vibrant-blue" />
-                <CardTitle className="text-white text-2xl">Mobile Devices</CardTitle>
-              </div>
-              <CardDescription className="text-gray-300">
-                Install on iOS and Android devices
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6">
+        {/* What is PWA Section */}
+        <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="pwa-info-card">
+          <CardHeader>
+            <div className="flex items-center justify-center space-x-3 mb-2">
+              <Globe className="h-8 w-8 text-vibrant-blue" />
+              <CardTitle className="text-white text-2xl">What is a Progressive Web App?</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent className="p-6 pt-0 text-center text-[14px]">
+            <p className="text-gray-300 leading-relaxed">
+              A Progressive Web App (PWA) is a web application that works like a native mobile app. You can install it directly from your browser to your home screen on any device - phone, tablet, or computer. It works offline, sends notifications, and feels just like a regular app, but without needing to download it from an app store.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Installation Steps with Visual Example */}
+        <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="install-steps-card">
+          <CardHeader>
+            <CardTitle className="text-white text-2xl text-center">Easy Installation Steps</CardTitle>
+            <CardDescription className="text-gray-300 text-center">
+              Install Regen & Track directly from your browser in just a few clicks
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-6 space-y-6">
+            {/* Visual Example */}
+            <div className="mb-8">
+              <img 
+                src={pwaInstallImage} 
+                alt="PWA Installation Example showing browser menu with Add to Home Screen option" 
+                className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+                data-testid="pwa-install-image"
+              />
+              <p className="text-gray-400 text-sm mt-2 text-center">
+                Example: Installing Regen & Track as a PWA from your browser
+              </p>
+            </div>
+
+            {/* Installation Steps */}
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Mobile Installation */}
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3 flex items-center">
-                  <Badge variant="secondary" className="mr-2">iOS</Badge>
-                  iPhone & iPad
+                <h3 className="text-lg font-semibold text-white mb-3 flex items-center justify-center">
+                  <Smartphone className="h-5 w-5 text-vibrant-blue mr-2" />
+                  On Mobile
                 </h3>
-                <ol className="space-y-2 text-gray-300">
-                  <li className="flex items-start" data-testid="ios-step-1">
+                <ol className="space-y-3 text-gray-300">
+                  <li className="flex items-start" data-testid="mobile-step-1">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Open the App Store on your device
+                    <span>Open Regen & Track in your mobile browser</span>
                   </li>
-                  <li className="flex items-start" data-testid="ios-step-2">
+                  <li className="flex items-start" data-testid="mobile-step-2">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Search for "Regen & Track"
+                    <span>Tap the menu button (⋮) in your browser</span>
                   </li>
-                  <li className="flex items-start" data-testid="ios-step-3">
+                  <li className="flex items-start" data-testid="mobile-step-3">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Tap "Get" to download and install
+                    <span>Select "Add to Home Screen" or "Install App"</span>
+                  </li>
+                  <li className="flex items-start" data-testid="mobile-step-4">
+                    <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Tap "Install" and enjoy the app!</span>
                   </li>
                 </ol>
-                <Button className="w-full mt-4 bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="ios-download-btn">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Download for iOS
-                </Button>
               </div>
 
+              {/* Desktop Installation */}
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3 flex items-center">
-                  <Badge variant="secondary" className="mr-2">Android</Badge>
-                  Android Devices
+                <h3 className="text-lg font-semibold text-white mb-3 flex items-center justify-center">
+                  <Monitor className="h-5 w-5 text-vibrant-blue mr-2" />
+                  On Desktop
                 </h3>
-                <ol className="space-y-2 text-gray-300">
-                  <li className="flex items-start" data-testid="android-step-1">
+                <ol className="space-y-3 text-gray-300">
+                  <li className="flex items-start" data-testid="desktop-step-1">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Open Google Play Store
+                    <span>Visit Regen & Track in Chrome, Edge, or Safari</span>
                   </li>
-                  <li className="flex items-start" data-testid="android-step-2">
+                  <li className="flex items-start" data-testid="desktop-step-2">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Search for "Regen & Track"
+                    <span>Look for the install icon (⊕) in the address bar</span>
                   </li>
-                  <li className="flex items-start" data-testid="android-step-3">
+                  <li className="flex items-start" data-testid="desktop-step-3">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Tap "Install" to download
+                    <span>Click the install icon and confirm</span>
                   </li>
-                </ol>
-                <Button className="w-full mt-4 bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="android-download-btn">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Download for Android
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Desktop Installation */}
-          <Card className="bg-navy-light border-purple-900/30" data-testid="desktop-install-card">
-            <CardHeader>
-              <div className="flex items-center space-x-3 mb-2">
-                <Monitor className="h-8 w-8 text-vibrant-blue" />
-                <CardTitle className="text-white text-2xl">Desktop</CardTitle>
-              </div>
-              <CardDescription className="text-gray-300">
-                Access from your computer browser
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Web Application</h3>
-                <ol className="space-y-2 text-gray-300">
-                  <li className="flex items-start" data-testid="web-step-1">
+                  <li className="flex items-start" data-testid="desktop-step-4">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Open your preferred web browser
-                  </li>
-                  <li className="flex items-start" data-testid="web-step-2">
-                    <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Navigate to app.regentrack.com
-                  </li>
-                  <li className="flex items-start" data-testid="web-step-3">
-                    <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    Create your account and start tracking
+                    <span>The app will open in its own window</span>
                   </li>
                 </ol>
-                <Button className="w-full mt-4 bg-gradient-to-r from-vibrant-blue to-vibrant-green" data-testid="web-access-btn">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Access Web App
-                </Button>
               </div>
+            </div>
 
-              <div className="bg-purple-900/20 p-4 rounded-lg">
-                <h4 className="text-white font-semibold mb-2">💡 Pro Tip</h4>
-                <p className="text-gray-300 text-sm">
-                  For the best desktop experience, you can install the web app as a PWA 
-                  (Progressive Web App) by clicking the install icon in your browser's address bar.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+            {/* Benefits */}
+            <div className="bg-purple-900/20 p-6 rounded-lg mt-6">
+              <h4 className="text-white font-semibold mb-3 text-center">✨ Benefits of Installing as PWA</h4>
+              <ul className="text-gray-300 space-y-2 text-sm">
+                <li data-testid="benefit-1">• Works offline - track your workouts even without internet</li>
+                <li data-testid="benefit-2">• Faster loading times and smoother performance</li>
+                <li data-testid="benefit-3">• Push notifications for workout reminders</li>
+                <li data-testid="benefit-4">• Home screen shortcut for quick access</li>
+                <li data-testid="benefit-5">• App-like experience without app store downloads</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* System Requirements */}
         <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="requirements-card">
-          <CardContent>
+          <CardContent className="p-6 pt-0 text-center text-[14px]">
             <div>
               <h3 className="text-lg font-semibold text-white mb-3">Browser Requirements</h3>
               <ul className="space-y-2 text-gray-300">
