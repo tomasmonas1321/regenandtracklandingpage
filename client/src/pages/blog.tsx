@@ -42,11 +42,19 @@ export default function Blog() {
       date: "August 27, 2025",
       readTime: "9 min read",
       category: "Recovery Science"
+    },
+    {
+      id: 6,
+      title: "Workload Management Basics",
+      excerpt: "Understanding training load, internal vs external load, and the importance of wellness monitoring for optimizing performance and preventing overtraining in athletes.",
+      author: "Admin",
+      date: "September 10, 2025",
+      readTime: "6 min read",
+      category: "Training Load"
     }
-   
   ];
 
-  const categories = ["Recovery Science", "Nutrition", "Mental Performance"];
+  const categories = ["Recovery Science", "Nutrition", "Mental Performance", "Training Load"];
 
   return (
     <div className="bg-navy text-white min-h-screen">
@@ -65,7 +73,7 @@ export default function Blog() {
           {categories.map((category) => (
             <Button
               key={category}
-              variant={category === "All" ? "default" : "outline"}
+              variant="outline"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border hover:text-accent-foreground h-10 px-4 py-2 border-purple-900/30 text-white hover:bg-purple-900/20 bg-[#1e9df1]"
               data-testid={`category-${category.toLowerCase().replace(/\s+/g, '-')}`}
             >

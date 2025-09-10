@@ -537,6 +537,77 @@ export default function Article() {
         
         <p>Start with one or two strategies and build from there. Your performance, recovery, and overall well-being will thank you for making sleep a priority.</p>
       `
+    },
+    "6": {
+      id: 6,
+      title: "Workload Management Basics",
+      excerpt: "Understanding training load, internal vs external load, and the importance of wellness monitoring for optimizing performance and preventing overtraining in athletes.",
+      author: "Admin",
+      date: "September 10, 2025",
+      readTime: "6 min read",
+      category: "Training Load",
+      content: `
+        <h2>What is Training Load?</h2>
+        <p>Training load is the combination of different stressors. In those stressors we can include stressors associated with your sport and training and non-sport stressors. So for example pitch sessions, games, gym work, recovery sessions, technical sessions are all classified as a sport stressor. The non-sport stressors include: work stress, family, relationship stress, traveling, studying etc.</p>
+        
+        <h2>Types of Load: Internal and External</h2>
+        <p>There are 2 types of load – internal and external load. Understanding both is crucial for effective training management.</p>
+        
+        <h3>External Load</h3>
+        <p>External load is the external stimulus applied to the athlete. It is the objectively measurable sport and non-sport physical work – usually measured by accelerometers and GPS units. Examples include:</p>
+        <ul>
+          <li>Distance covered during training</li>
+          <li>Sprint speeds and accelerations</li>
+          <li>Weight lifted in the gym</li>
+          <li>Training duration and frequency</li>
+          <li>Number of jumps or contacts</li>
+        </ul>
+        
+        <h3>Internal Load</h3>
+        <p>Internal load is the individual physiological and psychological response to external loads (your physical training and daily activity), combined with daily life stressors and other environmental and biological factors. It can be measured using perceived effort scale – athlete subjective rating of activity (RPE scale).</p>
+        
+        <p>Internal load can also include objective measures such as:</p>
+        <ul>
+          <li>Heart rate responses</li>
+          <li>Blood lactate concentration</li>
+          <li>Heart rate variability (HRV)</li>
+          <li>Sleep quality metrics</li>
+          <li>Hormonal markers</li>
+        </ul>
+        
+        <h2>What is Wellness and Why Bother Filling it Out?</h2>
+        <p>The purpose of collecting the athlete wellness is to monitor variations in the athlete recovery and stress/fatigue state and to identify possible 'red flags' for poor performance and overtraining.</p>
+        
+        <p>Poor wellness scores indicate potential psychological or physical under-recovery and (if goes on for longer periods) should lead to adjustments to the training program. Wellness questionnaire is a key to minimizing non-contact injuries and very helpful tool in training load management.</p>
+        
+        <h3>Key Wellness Metrics to Track</h3>
+        <ul>
+          <li><strong>Sleep Quality:</strong> How well did you sleep last night?</li>
+          <li><strong>Energy Levels:</strong> How energetic do you feel today?</li>
+          <li><strong>Muscle Soreness:</strong> How sore are your muscles?</li>
+          <li><strong>Stress Levels:</strong> How stressed do you feel?</li>
+          <li><strong>Mood:</strong> How would you rate your mood today?</li>
+        </ul>
+        
+        <h2>Practical Application</h2>
+        <p>Effective workload management involves:</p>
+        <ul>
+          <li>Regular monitoring of both internal and external loads</li>
+          <li>Daily wellness questionnaires completed consistently</li>
+          <li>Adjusting training intensity based on wellness scores</li>
+          <li>Recognizing patterns between load and recovery</li>
+          <li>Communication between athlete and coaching staff</li>
+        </ul>
+        
+        <blockquote>
+          "The best ability is availability. Managing training load properly keeps athletes healthy and performing at their peak when it matters most."
+        </blockquote>
+        
+        <h2>Conclusion</h2>
+        <p>Understanding and managing training load is fundamental to athletic success. By monitoring both internal and external load while maintaining consistent wellness tracking, athletes and coaches can optimize performance while minimizing injury risk. Remember, it's not just about training hard – it's about training smart.</p>
+        
+        <p>Start implementing basic load monitoring today. Track your training, monitor your wellness, and make data-driven decisions about your training program. Your future self will thank you.</p>
+      `
     }
   };
   
