@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import InstallApp from "@/pages/install-app";
 import Blog from "@/pages/blog";
+import Article from "@/pages/article";
 import NotFound from "@/pages/not-found";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" component={Home} />
         <Route path="/install-app" component={InstallApp} />
         <Route path="/blog" component={Blog} />
+        <Route path="/blog/:id" component={Article} />
         <Route component={NotFound} />
       </Switch>
       <Toaster />
