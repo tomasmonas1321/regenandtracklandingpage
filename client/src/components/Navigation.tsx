@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "wouter";
 import logoImage from "@assets/regen & track logo very small_1755603375132.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,32 +35,50 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-3" data-testid="logo">
-            <img 
-              src={logoImage} 
-              alt="Regen & Track Logo" 
-              className="w-8 h-8 object-contain"
-            />
-            <span className="font-bold text-lg">Regen & Track</span>
-          </div>
+          <Link href="/">
+            <div className="flex items-center space-x-3 cursor-pointer" data-testid="logo">
+              <img 
+                src={logoImage} 
+                alt="Regen & Track Logo" 
+                className="w-8 h-8 object-contain"
+              />
+              <span className="font-bold text-lg">Regen & Track</span>
+            </div>
+          </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("features")}
-              className="text-gray-300 hover:text-white transition-colors"
-              data-testid="nav-features"
-            >
-              Features
-            </button>
-            <button
-              onClick={() => scrollToSection("preview")}
-              className="text-gray-300 hover:text-white transition-colors"
-              data-testid="nav-preview"
-            >
-              Preview
-            </button>
+            {location === "/" ? (
+              <>
+                <button
+                  onClick={() => scrollToSection("features")}
+                  className="text-gray-300 hover:text-white transition-colors"
+                  data-testid="nav-features"
+                >
+                  Features
+                </button>
+                <button
+                  onClick={() => scrollToSection("preview")}
+                  className="text-gray-300 hover:text-white transition-colors"
+                  data-testid="nav-preview"
+                >
+                  Preview
+                </button>
+              </>
+            ) : (
+              <>
+                <Link href="/" className="text-gray-300 hover:text-white transition-colors" data-testid="nav-home">
+                  Home
+                </Link>
+              </>
+            )}
+            <Link href="/install-app" className="text-gray-300 hover:text-white transition-colors" data-testid="nav-install">
+              Install App
+            </Link>
+            <Link href="/blog" className="text-gray-300 hover:text-white transition-colors" data-testid="nav-blog">
+              Blog
+            </Link>
             <Button
-              onClick={() => scrollToSection("download")}
+              onClick={() => location === "/" ? scrollToSection("download") : window.location.href = "/#download"}
               className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90"
               data-testid="nav-cta"
             >
@@ -81,22 +101,36 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-navy-light/95 backdrop-blur-sm border-t border-purple-900/30">
             <div className="px-4 py-6 space-y-4">
-              <button
-                onClick={() => scrollToSection("features")}
-                className="block text-gray-300 hover:text-white transition-colors"
-                data-testid="mobile-nav-features"
-              >
-                Features
-              </button>
-              <button
-                onClick={() => scrollToSection("preview")}
-                className="block text-gray-300 hover:text-white transition-colors"
-                data-testid="mobile-nav-preview"
-              >
-                Preview
-              </button>
+              {location === "/" ? (
+                <>
+                  <button
+                    onClick={() => scrollToSection("features")}
+                    className="block text-gray-300 hover:text-white transition-colors"
+                    data-testid="mobile-nav-features"
+                  >
+                    Features
+                  </button>
+                  <button
+                    onClick={() => scrollToSection("preview")}
+                    className="block text-gray-300 hover:text-white transition-colors"
+                    data-testid="mobile-nav-preview"
+                  >
+                    Preview
+                  </button>
+                </>
+              ) : (
+                <Link href="/" className="block text-gray-300 hover:text-white transition-colors" data-testid="mobile-nav-home">
+                  Home
+                </Link>
+              )}
+              <Link href="/install-app" className="block text-gray-300 hover:text-white transition-colors" data-testid="mobile-nav-install">
+                Install App
+              </Link>
+              <Link href="/blog" className="block text-gray-300 hover:text-white transition-colors" data-testid="mobile-nav-blog">
+                Blog
+              </Link>
               <Button
-                onClick={() => scrollToSection("download")}
+                onClick={() => location === "/" ? scrollToSection("download") : window.location.href = "/#download"}
                 className="w-full bg-gradient-to-r from-vibrant-blue to-vibrant-green"
                 data-testid="mobile-nav-cta"
               >
