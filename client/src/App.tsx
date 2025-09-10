@@ -1,26 +1,21 @@
-import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import AppPreview from "@/components/AppPreview";
-import Testimonials from "@/components/Testimonials";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
+import { Route, Switch } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import Home from "@/pages/home";
+import InstallApp from "@/pages/install-app";
+import Blog from "@/pages/blog";
+import NotFound from "@/pages/not-found";
 
 function App() {
   return (
     <TooltipProvider>
-      <div className="bg-navy text-white overflow-x-hidden">
-        <Navigation />
-        <Hero />
-        <Features />
-        <AppPreview />
-        <Testimonials />
-        <CTA />
-        <Footer />
-        <Toaster />
-      </div>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/install-app" component={InstallApp} />
+        <Route path="/blog" component={Blog} />
+        <Route component={NotFound} />
+      </Switch>
+      <Toaster />
     </TooltipProvider>
   );
 }
