@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,6 +7,8 @@ import { Link } from "wouter";
 import pwaInstallImage from "@assets/pwa-install-example.png";
 
 export default function InstallApp() {
+  const [selectedPlatform, setSelectedPlatform] = useState<'android' | 'ios'>('android');
+
   return (
     <div className="bg-navy text-white min-h-screen text-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -42,45 +45,114 @@ export default function InstallApp() {
             </CardDescription>
           </CardHeader>
           <CardContent className="p-6 space-y-6">
+            {/* Platform Toggle */}
+            <div className="flex justify-center mb-6">
+              <div className="bg-navy-dark rounded-lg p-1 flex" data-testid="platform-toggle">
+                <Button
+                  variant={selectedPlatform === 'android' ? 'default' : 'ghost'}
+                  size="sm"
+                  onClick={() => setSelectedPlatform('android')}
+                  className={`px-4 py-2 rounded-md transition-colors ${
+                    selectedPlatform === 'android' 
+                      ? 'bg-vibrant-blue text-white' 
+                      : 'text-gray-400 hover:text-white hover:bg-gray-700'
+                  }`}
+                  data-testid="android-toggle-btn"
+                >
+                  Android
+                </Button>
+                <Button
+                  variant={selectedPlatform === 'ios' ? 'default' : 'ghost'}
+                  size="sm"
+                  onClick={() => setSelectedPlatform('ios')}
+                  className={`px-4 py-2 rounded-md transition-colors ${
+                    selectedPlatform === 'ios' 
+                      ? 'bg-vibrant-blue text-white' 
+                      : 'text-gray-400 hover:text-white hover:bg-gray-700'
+                  }`}
+                  data-testid="ios-toggle-btn"
+                >
+                  iOS
+                </Button>
+              </div>
+            </div>
+
             {/* Visual Example */}
             <div className="mb-8">
-              <img 
-                src={pwaInstallImage} 
-                alt="PWA Installation Example showing browser menu with Add to Home Screen option" 
-                className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
-                data-testid="pwa-install-image"
-              />
-              <p className="text-gray-400 text-sm mt-2 text-center">
-                Example: Installing Regen & Track as a PWA from your browser
-              </p>
+              {selectedPlatform === 'android' && (
+                <>
+                  <img 
+                    src={pwaInstallImage} 
+                    alt="Android PWA Installation Example showing browser menu with Add to Home Screen option" 
+                    className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+                    data-testid="android-install-image"
+                  />
+                  <p className="text-gray-400 text-sm mt-2 text-center">
+                    Example: Installing Regen & Track as a PWA on Android
+                  </p>
+                </>
+              )}
+              {selectedPlatform === 'ios' && (
+                <>
+                  {/* Placeholder for iOS image - will be updated when user uploads the iOS installation graphic */}
+                  <div className="w-full max-w-3xl mx-auto h-64 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center" data-testid="ios-install-placeholder">
+                    <p className="text-gray-400">iOS installation image will be shown here</p>
+                  </div>
+                  <p className="text-gray-400 text-sm mt-2 text-center">
+                    Example: Installing Regen & Track as a PWA on iOS
+                  </p>
+                </>
+              )}
             </div>
 
             {/* Installation Steps */}
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Mobile Installation */}
+              {/* Mobile Installation - Platform Specific */}
               <div>
                 <h3 className="text-lg font-semibold text-white mb-3 flex items-center justify-center">
                   <Smartphone className="h-5 w-5 text-vibrant-blue mr-2" />
-                  On Mobile
+                  On {selectedPlatform === 'android' ? 'Android' : 'iOS'}
                 </h3>
-                <ol className="space-y-3 text-gray-300">
-                  <li className="flex items-start" data-testid="mobile-step-1">
-                    <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Open Regen & Track in your mobile browser</span>
-                  </li>
-                  <li className="flex items-start" data-testid="mobile-step-2">
-                    <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Tap the menu button (⋮) in your browser</span>
-                  </li>
-                  <li className="flex items-start" data-testid="mobile-step-3">
-                    <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Select "Add to Home Screen" or "Install App"</span>
-                  </li>
-                  <li className="flex items-start" data-testid="mobile-step-4">
-                    <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Tap "Install" and enjoy the app!</span>
-                  </li>
-                </ol>
+                {selectedPlatform === 'android' && (
+                  <ol className="space-y-3 text-gray-300">
+                    <li className="flex items-start" data-testid="android-step-1">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Open Regen & Track in Chrome or Firefox</span>
+                    </li>
+                    <li className="flex items-start" data-testid="android-step-2">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Tap the menu button (⋮) in your browser</span>
+                    </li>
+                    <li className="flex items-start" data-testid="android-step-3">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Select "Add to Home Screen" or "Install App"</span>
+                    </li>
+                    <li className="flex items-start" data-testid="android-step-4">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Tap "Install" and enjoy the app!</span>
+                    </li>
+                  </ol>
+                )}
+                {selectedPlatform === 'ios' && (
+                  <ol className="space-y-3 text-gray-300">
+                    <li className="flex items-start" data-testid="ios-step-1">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Open Regen & Track in Safari browser</span>
+                    </li>
+                    <li className="flex items-start" data-testid="ios-step-2">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Tap the Share button (⬆️) at the bottom</span>
+                    </li>
+                    <li className="flex items-start" data-testid="ios-step-3">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Scroll down and tap "Add to Home Screen"</span>
+                    </li>
+                    <li className="flex items-start" data-testid="ios-step-4">
+                      <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Tap "Add" to install the app</span>
+                    </li>
+                  </ol>
+                )}
               </div>
 
               {/* Desktop Installation */}
