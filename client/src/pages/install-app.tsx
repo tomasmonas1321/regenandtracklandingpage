@@ -140,7 +140,7 @@ export default function InstallApp() {
                   <ol className="space-y-3 text-gray-300">
                     <li className="flex items-start" data-testid="ios-step-1">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Open Regen & Track in Safari browser</span>
+                      <span className="text-left">Open Regen & Track in Safari browser</span>
                     </li>
                     <li className="flex items-start" data-testid="ios-step-2">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
