@@ -88,7 +88,7 @@ export default function InstallApp() {
                     className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
                     data-testid="android-install-image"
                   />
-                  <p className="text-gray-400 text-sm mt-2 text-center">
+                  <p className="text-gray-400 mt-2 text-center text-[12px]">
                     Example: Installing Regen & Track as a PWA on Android
                   </p>
                 </>
