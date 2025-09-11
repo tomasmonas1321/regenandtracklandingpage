@@ -148,7 +148,7 @@ export default function InstallApp() {
                     </li>
                     <li className="flex items-start" data-testid="ios-step-3">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Scroll down and tap "Add to Home Screen"</span>
+                      <span className="text-left">Scroll down and tap "Add to Home Screen"</span>
                     </li>
                     <li className="flex items-start" data-testid="ios-step-4">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
