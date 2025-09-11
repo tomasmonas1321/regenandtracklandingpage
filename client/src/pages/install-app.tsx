@@ -120,15 +120,15 @@ export default function InstallApp() {
                   <ol className="space-y-3 text-gray-300">
                     <li className="flex items-start" data-testid="android-step-1">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Open Regen & Track in Chrome or Firefox</span>
+                      <span className="text-left">Open Regen & Track in Chrome or Firefox</span>
                     </li>
                     <li className="flex items-start" data-testid="android-step-2">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Tap the menu button (⋮) in your browser</span>
+                      <span className="text-left">Tap the menu button (⋮) in your browser</span>
                     </li>
                     <li className="flex items-start" data-testid="android-step-3">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Select "Add to Home Screen" or "Install App"</span>
+                      <span className="text-left">Select "Add to Home Screen" or "Install App"</span>
                     </li>
                     <li className="flex items-start" data-testid="android-step-4">
                       <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
