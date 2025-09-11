@@ -39,7 +39,7 @@ export default function InstallApp() {
 
         {/* Installation Steps with Visual Example */}
         <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="install-steps-card">
-          <CardHeader>
+          <CardHeader className="pt-[13px] pb-[13px]">
             <CardTitle className="text-white text-2xl text-center">Easy Installation Steps</CardTitle>
             <CardDescription className="text-gray-300 text-center">
               Install Regen & Track directly from your browser in just a few clicks
