@@ -171,7 +171,7 @@ export default function InstallApp() {
                   </li>
                   <li className="flex items-start" data-testid="desktop-step-2">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Look for the install icon (⊕) in the address bar</span>
+                    <span className="text-left">Look for the install icon (⊕) in the address bar</span>
                   </li>
                   <li className="flex items-start" data-testid="desktop-step-3">
                     <CheckCircle className="h-5 w-5 text-vibrant-green mr-2 mt-0.5 flex-shrink-0" />
