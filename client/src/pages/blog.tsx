@@ -117,7 +117,7 @@ export default function Blog() {
                       {post.date}
                     </div>
                   </div>
-                  <Link href={`/blog/${post.id}`}>
+                  <Link href={`/blog-post-${post.id === 6 ? '2' : post.id === 1 ? '1' : post.id === 3 ? '3' : post.id === 4 ? '4' : post.id === 5 ? '5' : post.id === 7 ? '6' : '7'}`}>
                     <Button variant="ghost" size="sm" className="text-vibrant-blue hover:text-white" data-testid={`post-read-btn-${post.id}`}>
                       Read More
                       <ArrowRight className="w-3 h-3 ml-1" />

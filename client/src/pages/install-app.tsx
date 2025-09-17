@@ -24,7 +24,7 @@ export default function InstallApp() {
 
         {/* What is PWA Section */}
         <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="pwa-info-card">
-          <CardHeader>
+          <CardHeader className="flex flex-col space-y-1.5 p-6 pt-[13px] pb-[13px]">
             <div className="flex items-center justify-center space-x-3 mb-2">
               <Globe className="h-8 w-8 text-vibrant-blue" />
               <CardTitle className="text-white text-2xl">What is a Progressive Web App?</CardTitle>
@@ -39,7 +39,7 @@ export default function InstallApp() {
 
         {/* Installation Steps with Visual Example */}
         <Card className="bg-navy-light border-purple-900/30 mb-8" data-testid="install-steps-card">
-          <CardHeader className="pt-[13px] pb-[13px]">
+          <CardHeader className="flex flex-col space-y-1.5 p-6 pt-[13px] pb-[13px]">
             <CardTitle className="text-white text-2xl text-center">Easy Installation Steps</CardTitle>
             <CardDescription className="text-gray-300 text-center">
               Install Regen & Track directly from your browser in just a few clicks
