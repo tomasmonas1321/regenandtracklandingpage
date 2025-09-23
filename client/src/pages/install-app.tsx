@@ -27,7 +27,7 @@ export default function InstallApp() {
           <CardHeader className="flex flex-col space-y-1.5 p-6 pt-[13px] pb-[13px]">
             <div className="flex items-center justify-center space-x-3 mb-2">
               <Globe className="h-8 w-8 text-vibrant-blue" />
-              <CardTitle className="text-white text-2xl">What is a Progressive Web App?</CardTitle>
+              <CardTitle className="text-white text-2xl">What is a Progressive Web App (PWA)?</CardTitle>
             </div>
           </CardHeader>
           <CardContent className="p-6 pt-0 text-center text-[14px]">
