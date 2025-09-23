@@ -251,7 +251,7 @@ export default function Article() {
           <li><strong>Instructional:</strong> "Keep your eyes on the ball"</li>
           <li><strong>Motivational:</strong> "You've got this, stay strong"</li>
           <li><strong>Calming:</strong> "Breathe deep, stay relaxed"</li>
-          <li><strong>Focusing:</strong> "One point at a time"</li>
+          <li><strong>Focusing:</strong> "One play at a time"</li>
         </ul>
 
         <h2>Building Resilience Through Adversity Training</h2>
