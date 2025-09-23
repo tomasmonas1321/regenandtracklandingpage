@@ -26,18 +26,7 @@ export default function Hero() {
               Track what matters, get actionable insights, and unlock your true potential.
             </p>
             
-            <div className="flex justify-center lg:justify-start mb-12">
-              <a href="https://app.regenandtrack.com">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-8 py-6 text-lg font-semibold"
-                  data-testid="hero-primary-cta"
-                >
-                  <Play className="mr-3 h-5 w-5" />
-                  Download the App
-                </Button>
-              </a>
-            </div>
+            
 
             <div className="flex items-center justify-center lg:justify-start space-x-8 text-sm text-gray-400">
               <div className="flex items-center space-x-2" data-testid="hero-feature-free">
