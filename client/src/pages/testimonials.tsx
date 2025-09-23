@@ -24,7 +24,7 @@ export default function Testimonials() {
       id: "1",
       name: "Shane",
       role: "Hurling",
-      initials: "Shane",
+      initials: "SM",
       gradient: "from-vibrant-blue to-vibrant-green",
       quote: "Finally, an app that gets it. The recovery tracking has completely changed how I approach my training cycles.",
       rating: 5
@@ -33,18 +33,18 @@ export default function Testimonials() {
       id: "2",
       name: "Conor",
       role: "Football",
-      initials: "Conor",
+      initials: "CH",
       gradient: "from-vibrant-green to-vibrant-blue",
       quote: "The data visualization is incredible. I can see exactly how my sleep affects my performance the next day.",
       rating: 5
     },
     {
       id: "3",
-      name: "",
+      name: "Alan",
       role: "Soccer",
-      initials: "JD",
+      initials: "AD",
       gradient: "from-vibrant-orange to-vibrant-red",
-      quote: "Simple yet powerful. I've tried every fitness app out there, and this is the one that actually helped me PR.",
+      quote: "Simple, yet powerful. I love strength tracking feature.",
       rating: 5
     }
   ]);
