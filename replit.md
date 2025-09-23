@@ -4,7 +4,9 @@ This is a full-stack athletic performance tracking application called "Regen & T
 
 # Recent Changes
 
-**September 23, 2025**: Contact form simplified and privacy policy added:
+**September 23, 2025**: Contact form simplified, testimonials management added, and privacy policy added:
+- **Testimonials Management System** (`/testimonials`): Full CRUD testimonials page allowing users to add, edit, and delete client testimonials with star ratings and professional display cards
+- **Testimonials Button**: Added testimonials button below "95% report better performance" statistic on homepage that navigates to testimonials page
 - **Contact Form Simplification**: Removed SendGrid integration and backend processing; contact form now uses mailto: links to open user's default email client with pre-filled information
 - **Privacy Policy Page** (`/privacy-policy`): Comprehensive privacy policy outlining data collection, usage, sharing, security measures, and user rights with contact information
 - **Blog System Restructuring**: Converted from dynamic routing (/blog/:id) to individual sub-pages (/blog-post-1 through /blog-post-7) for better URL structure and content sharing

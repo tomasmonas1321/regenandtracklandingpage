@@ -256,7 +256,12 @@ export default function Testimonials() {
                     min="1"
                     max="5"
                     value={formData.rating}
-                    onChange={(e) => setFormData(prev => ({ ...prev, rating: parseInt(e.target.value) }))}
+                    onChange={(e) => {
+                      const rating = parseInt(e.target.value);
+                      if (!isNaN(rating) && rating >= 1 && rating <= 5) {
+                        setFormData(prev => ({ ...prev, rating }));
+                      }
+                    }}
                     className="bg-navy border-purple-700/30 text-white"
                     data-testid="input-rating"
                   />
