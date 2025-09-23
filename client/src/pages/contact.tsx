@@ -5,10 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Loader2, Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import Footer from "@/components/Footer";
-import { useMutation } from "@tanstack/react-query";
-import { queryClient } from "@/lib/queryClient";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,38 +16,6 @@ export default function Contact() {
     message: "",
   });
   const { toast } = useToast();
-
-  const submitContactForm = useMutation({
-    mutationFn: async (data: typeof formData) => {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-      
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
-      
-      return response.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
-      });
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    },
-    onError: () => {
-      toast({
-        title: "Error sending message",
-        description: "Please try again later.",
-        variant: "destructive",
-      });
-    },
-  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -63,7 +29,19 @@ export default function Contact() {
       return;
     }
     
-    submitContactForm.mutate(formData);
+    // Create mailto URL with form data
+    const mailtoUrl = `mailto:info@gpc-performance.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+    
+    // Open default email client
+    window.location.href = mailtoUrl;
+    
+    // Show success message
+    toast({
+      title: "Opening email client...",
+      description: "Your default email application should open with the message pre-filled.",
+    });
   };
 
   const handleInputChange = (field: keyof typeof formData, value: string) => {
@@ -147,21 +125,11 @@ export default function Contact() {
                   
                   <Button
                     type="submit"
-                    disabled={submitContactForm.isPending}
                     className="w-full bg-gradient-to-r from-vibrant-blue to-vibrant-purple hover:from-vibrant-blue/80 hover:to-vibrant-purple/80 text-white font-medium"
                     data-testid="button-submit"
                   >
-                    {submitContactForm.isPending ? (
-                      <>
-                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        Sending...
-                      </>
-                    ) : (
-                      <>
-                        <Mail className="w-4 h-4 mr-2" />
-                        Send Message
-                      </>
-                    )}
+                    <Mail className="w-4 h-4 mr-2" />
+                    Open Email Client
                   </Button>
                 </form>
               </CardContent>
