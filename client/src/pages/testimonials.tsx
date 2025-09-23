@@ -22,26 +22,26 @@ export default function Testimonials() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([
     {
       id: "1",
-      name: "Marcus Johnson",
-      role: "Competitive Powerlifter",
-      initials: "MJ",
+      name: "Shane",
+      role: "Hurling",
+      initials: "Shane",
       gradient: "from-vibrant-blue to-vibrant-green",
       quote: "Finally, an app that gets it. The recovery tracking has completely changed how I approach my training cycles.",
       rating: 5
     },
     {
       id: "2",
-      name: "Alex Smith",
-      role: "Marathon Runner",
-      initials: "AS",
+      name: "Conor",
+      role: "Football",
+      initials: "Conor",
       gradient: "from-vibrant-green to-vibrant-blue",
       quote: "The data visualization is incredible. I can see exactly how my sleep affects my performance the next day.",
       rating: 5
     },
     {
       id: "3",
-      name: "Jessica Davis",
-      role: "CrossFit Athlete",
+      name: "",
+      role: "Soccer",
       initials: "JD",
       gradient: "from-vibrant-orange to-vibrant-red",
       quote: "Simple yet powerful. I've tried every fitness app out there, and this is the one that actually helped me PR.",
