@@ -1,4 +1,5 @@
 import { ClipboardList, Heart, Rocket, BarChart3 } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Features() {
   const features = [
@@ -78,18 +79,16 @@ export default function Features() {
           })}
         </div>
 
-        {/* Additional Download Button */}
+        {/* Blog CTA Button */}
         <div className="text-center mt-16">
-          <button
-            onClick={() => {
-              const element = document.getElementById("download");
-              element?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-12 py-6 text-xl font-bold text-white rounded-2xl shadow-2xl"
-            data-testid="features-download-cta"
-          >
-            Get Regen & Track for Free
-          </button>
+          <Link href="/blog">
+            <button
+              className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-12 py-6 text-xl font-bold text-white rounded-2xl shadow-2xl"
+              data-testid="features-blog-cta"
+            >
+              Check out our blog
+            </button>
+          </Link>
         </div>
       </div>
     </section>
