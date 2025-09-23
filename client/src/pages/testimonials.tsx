@@ -22,11 +22,11 @@ export default function Testimonials() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([
     {
       id: "1",
-      name: "Shane",
+      name: "Marie",
       role: "Hurling",
-      initials: "SM",
+      initials: "MR",
       gradient: "from-vibrant-blue to-vibrant-green",
-      quote: "Finally, an app that gets it. The recovery tracking has completely changed how I approach my training cycles.",
+      quote: "I love how quick and intuitive the wellness check-ins are. No complicated forms, just a few taps and I’m done. Seeing my wellness score evolve on the trend page helps me stay consistent and motivated.",
       rating: 5
     },
     {
@@ -35,7 +35,7 @@ export default function Testimonials() {
       role: "Football",
       initials: "CH",
       gradient: "from-vibrant-green to-vibrant-blue",
-      quote: "The data visualization is incredible. I can see exactly how my sleep affects my performance the next day.",
+      quote: " I used to push through fatigue without realizing the damage I was doing. Now, I track my sleep, soreness, and stress levels in one place. The app’s insights are backed by sports science and easy to follow."",
       rating: 5
     },
     {
