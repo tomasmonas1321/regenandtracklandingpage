@@ -13,6 +13,7 @@ import BlogPost6 from "@/pages/blog-post-6";
 import BlogPost7 from "@/pages/blog-post-7";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import Contact from "@/pages/contact";
+import Testimonials from "@/pages/testimonials";
 import NotFound from "@/pages/not-found";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/blog-post-7" component={BlogPost7} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/contact" component={Contact} />
+        <Route path="/testimonials" component={Testimonials} />
         <Route component={NotFound} />
       </Switch>
       <Toaster />

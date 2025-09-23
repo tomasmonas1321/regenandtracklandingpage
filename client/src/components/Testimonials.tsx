@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Testimonials() {
   const testimonials = [
@@ -52,6 +53,17 @@ export default function Testimonials() {
           </div>
         </div>
 
+        {/* Testimonials Button */}
+        <div className="text-center mt-16">
+          <Link href="/testimonials">
+            <button
+              className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-12 py-6 text-xl font-bold text-white rounded-2xl shadow-2xl"
+              data-testid="testimonials-cta"
+            >
+              Testimonials
+            </button>
+          </Link>
+        </div>
 
       </div>
     </section>
