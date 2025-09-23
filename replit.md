@@ -4,6 +4,11 @@ This is a full-stack athletic performance tracking application called "Regen & T
 
 # Recent Changes
 
+**September 23, 2025**: Added privacy policy page and restructured blog system:
+- **Privacy Policy Page** (`/privacy-policy`): Comprehensive privacy policy outlining data collection, usage, sharing, security measures, and user rights with contact information
+- **Blog System Restructuring**: Converted from dynamic routing (/blog/:id) to individual sub-pages (/blog-post-1 through /blog-post-7) for better URL structure and content sharing
+- **Individual Blog Posts**: Created 7 separate page components with dedicated routes for each article including GPC-Performance partnership content
+
 **September 10, 2025**: Added multi-page routing functionality with two new subpages:
 - **Install App Page** (`/install-app`): Comprehensive installation guide for mobile (iOS/Android) and desktop platforms with system requirements
 - **Blog Page** (`/blog`): Content hub featuring articles on athletic performance, recovery science, nutrition, and mental training
