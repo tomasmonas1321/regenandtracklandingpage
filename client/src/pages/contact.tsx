@@ -164,8 +164,8 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300">
-                  We typically respond to all inquiries within 24 hours during business days. 
-                  For urgent matters, please include "URGENT" in your subject line.
+                  We typically respond to all inquiries within 48 hours during business days. 
+                  
                 </p>
               </CardContent>
             </Card>
