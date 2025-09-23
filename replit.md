@@ -4,7 +4,8 @@ This is a full-stack athletic performance tracking application called "Regen & T
 
 # Recent Changes
 
-**September 23, 2025**: Added privacy policy page and restructured blog system:
+**September 23, 2025**: Contact form simplified and privacy policy added:
+- **Contact Form Simplification**: Removed SendGrid integration and backend processing; contact form now uses mailto: links to open user's default email client with pre-filled information
 - **Privacy Policy Page** (`/privacy-policy`): Comprehensive privacy policy outlining data collection, usage, sharing, security measures, and user rights with contact information
 - **Blog System Restructuring**: Converted from dynamic routing (/blog/:id) to individual sub-pages (/blog-post-1 through /blog-post-7) for better URL structure and content sharing
 - **Individual Blog Posts**: Created 7 separate page components with dedicated routes for each article including GPC-Performance partnership content
