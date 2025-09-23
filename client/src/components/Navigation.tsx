@@ -77,6 +77,9 @@ export default function Navigation() {
             <Link href="/blog" className="text-gray-300 hover:text-white transition-colors" data-testid="nav-blog">
               Blog
             </Link>
+            <Link href="/testimonials" className="text-gray-300 hover:text-white transition-colors" data-testid="nav-testimonials">
+              Testimonials
+            </Link>
             <Button
               onClick={() => location === "/" ? scrollToSection("download") : window.location.href = "/#download"}
               className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90"
@@ -128,6 +131,9 @@ export default function Navigation() {
               </Link>
               <Link href="/blog" className="block text-gray-300 hover:text-white transition-colors" data-testid="mobile-nav-blog">
                 Blog
+              </Link>
+              <Link href="/testimonials" className="block text-gray-300 hover:text-white transition-colors" data-testid="mobile-nav-testimonials">
+                Testimonials
               </Link>
               <Button
                 onClick={() => location === "/" ? scrollToSection("download") : window.location.href = "/#download"}
