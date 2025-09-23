@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Star, Plus, Edit2, Trash2 } from "lucide-react";
+import { Star, Plus } from "lucide-react";
 import Footer from "@/components/Footer";
 
 interface Testimonial {
@@ -26,7 +26,7 @@ export default function Testimonials() {
       role: "Hurling",
       initials: "MR",
       gradient: "from-vibrant-blue to-vibrant-green",
-      quote: "I love how quick and intuitive the wellness check-ins are. No complicated forms, just a few taps and I’m done. Seeing my wellness score evolve on the trend page helps me stay consistent and motivated.",
+      quote: "I love how quick and intuitive the wellness check-ins are. No complicated forms, just a few taps and I'm done. Seeing my wellness score evolve on the trend page helps me stay consistent and motivated.",
       rating: 5
     },
     {
@@ -35,7 +35,7 @@ export default function Testimonials() {
       role: "Football",
       initials: "CH",
       gradient: "from-vibrant-green to-vibrant-blue",
-      quote: " I used to push through fatigue without realizing the damage I was doing. Now, I track my sleep, soreness, and stress levels in one place. The app’s insights are backed by sports science and easy to follow."",
+      quote: "I used to push through fatigue without realizing the damage I was doing. Now, I track my sleep, soreness, and stress levels in one place. The app's insights are backed by sports science and easy to follow.",
       rating: 5
     },
     {
@@ -50,7 +50,6 @@ export default function Testimonials() {
   ]);
 
   const [isAdding, setIsAdding] = useState(false);
-  const [editingId, setEditingId] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: "",
     role: "",
@@ -88,69 +87,27 @@ export default function Testimonials() {
       return;
     }
 
-    if (editingId) {
-      // Update existing testimonial
-      setTestimonials(prev => prev.map(testimonial => 
-        testimonial.id === editingId 
-          ? {
-              ...testimonial,
-              name: formData.name,
-              role: formData.role,
-              quote: formData.quote,
-              rating: formData.rating,
-              initials: generateInitials(formData.name)
-            }
-          : testimonial
-      ));
-      toast({
-        title: "Testimonial updated!",
-        description: "The testimonial has been successfully updated.",
-      });
-      setEditingId(null);
-    } else {
-      // Add new testimonial
-      const newTestimonial: Testimonial = {
-        id: Date.now().toString(),
-        name: formData.name,
-        role: formData.role,
-        quote: formData.quote,
-        rating: formData.rating,
-        initials: generateInitials(formData.name),
-        gradient: generateGradient()
-      };
-      setTestimonials(prev => [...prev, newTestimonial]);
-      toast({
-        title: "Testimonial added!",
-        description: "The new testimonial has been successfully added.",
-      });
-      setIsAdding(false);
-    }
-
-    setFormData({ name: "", role: "", quote: "", rating: 5 });
-  };
-
-  const handleEdit = (testimonial: Testimonial) => {
-    setFormData({
-      name: testimonial.name,
-      role: testimonial.role,
-      quote: testimonial.quote,
-      rating: testimonial.rating
-    });
-    setEditingId(testimonial.id);
-    setIsAdding(true);
-  };
-
-  const handleDelete = (id: string) => {
-    setTestimonials(prev => prev.filter(testimonial => testimonial.id !== id));
+    // Add new testimonial
+    const newTestimonial: Testimonial = {
+      id: Date.now().toString(),
+      name: formData.name,
+      role: formData.role,
+      quote: formData.quote,
+      rating: formData.rating,
+      initials: generateInitials(formData.name),
+      gradient: generateGradient()
+    };
+    setTestimonials(prev => [...prev, newTestimonial]);
     toast({
-      title: "Testimonial deleted",
-      description: "The testimonial has been successfully removed.",
+      title: "Testimonial added!",
+      description: "The new testimonial has been successfully added.",
     });
+    setIsAdding(false);
+    setFormData({ name: "", role: "", quote: "", rating: 5 });
   };
 
   const handleCancel = () => {
     setIsAdding(false);
-    setEditingId(null);
     setFormData({ name: "", role: "", quote: "", rating: 5 });
   };
 
@@ -190,13 +147,11 @@ export default function Testimonials() {
           </div>
         )}
 
-        {/* Add/Edit Form */}
+        {/* Add Form */}
         {isAdding && (
           <Card className="bg-navy-light border-purple-700/30 mb-12">
             <CardHeader>
-              <CardTitle className="text-white">
-                {editingId ? "Edit Testimonial" : "Add New Testimonial"}
-              </CardTitle>
+              <CardTitle className="text-white">Add New Testimonial</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -273,7 +228,7 @@ export default function Testimonials() {
                     className="bg-gradient-to-r from-vibrant-blue to-vibrant-purple hover:from-vibrant-blue/80 hover:to-vibrant-purple/80 text-white font-medium"
                     data-testid="button-save-testimonial"
                   >
-                    {editingId ? "Update Testimonial" : "Add Testimonial"}
+                    Add Testimonial
                   </Button>
                   <Button
                     type="button"
@@ -313,30 +268,9 @@ export default function Testimonials() {
                   {renderStars(testimonial.rating)}
                 </div>
                 
-                <p className="text-gray-300 mb-4" data-testid={`testimonial-quote-${testimonial.id}`}>
+                <p className="text-gray-300" data-testid={`testimonial-quote-${testimonial.id}`}>
                   "{testimonial.quote}"
                 </p>
-                
-                <div className="flex gap-2">
-                  <Button
-                    onClick={() => handleEdit(testimonial)}
-                    size="sm"
-                    variant="outline"
-                    className="border-purple-700/30 text-white hover:bg-purple-700/30"
-                    data-testid={`button-edit-${testimonial.id}`}
-                  >
-                    <Edit2 className="w-4 h-4" />
-                  </Button>
-                  <Button
-                    onClick={() => handleDelete(testimonial.id)}
-                    size="sm"
-                    variant="outline"
-                    className="border-red-700/30 text-red-400 hover:bg-red-700/30"
-                    data-testid={`button-delete-${testimonial.id}`}
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </Button>
-                </div>
               </CardContent>
             </Card>
           ))}
