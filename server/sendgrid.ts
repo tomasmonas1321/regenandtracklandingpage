@@ -1,13 +1,6 @@
 // Reference: javascript_sendgrid integration
 import { MailService } from '@sendgrid/mail';
 
-if (!process.env.SENDGRID_API_KEY) {
-  throw new Error("SENDGRID_API_KEY environment variable must be set");
-}
-
-const mailService = new MailService();
-mailService.setApiKey(process.env.SENDGRID_API_KEY);
-
 interface EmailParams {
   to: string;
   from: string;
@@ -16,21 +9,36 @@ interface EmailParams {
   html?: string;
 }
 
+// Simple HTML escaping function
+function escapeHtml(text: string): string {
+  const map: { [key: string]: string } = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  };
+  return text.replace(/[&<>"']/g, (m) => map[m]);
+}
+
 export async function sendEmail(params: EmailParams): Promise<boolean> {
   try {
-    const emailData: any = {
+    // Check if API key is available
+    if (!process.env.SENDGRID_API_KEY) {
+      console.error('SENDGRID_API_KEY environment variable not set');
+      return false;
+    }
+
+    const mailService = new MailService();
+    mailService.setApiKey(process.env.SENDGRID_API_KEY);
+
+    const emailData = {
       to: params.to,
       from: params.from,
       subject: params.subject,
+      text: params.text || '', // Always include text version
+      html: params.html || params.text || '', // Fall back to text if no HTML
     };
-    
-    if (params.text) {
-      emailData.text = params.text;
-    }
-    
-    if (params.html) {
-      emailData.html = params.html;
-    }
     
     await mailService.send(emailData);
     return true;

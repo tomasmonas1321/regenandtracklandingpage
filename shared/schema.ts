@@ -31,6 +31,11 @@ export const insertContactSubmissionSchema = createInsertSchema(contactSubmissio
   email: true,
   subject: true,
   message: true,
+}).extend({
+  name: z.string().min(1, "Name is required").max(100, "Name is too long"),
+  email: z.string().email("Please enter a valid email address").max(255, "Email is too long"),
+  subject: z.string().min(1, "Subject is required").max(200, "Subject is too long"),
+  message: z.string().min(10, "Message must be at least 10 characters").max(2000, "Message is too long"),
 });
 
 export type InsertContactSubmission = z.infer<typeof insertContactSubmissionSchema>;

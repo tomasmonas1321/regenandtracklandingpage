@@ -4,6 +4,18 @@ import { storage } from "./storage";
 import { sendEmail } from "./sendgrid";
 import { insertContactSubmissionSchema } from "@shared/schema";
 
+// Helper function to escape HTML
+function escapeHtml(text: string): string {
+  const map: { [key: string]: string } = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  };
+  return text.replace(/[&<>"']/g, (m) => map[m]);
+}
+
 export async function registerRoutes(app: Express): Promise<Server> {
   // put application routes here
   // prefix all routes with /api
@@ -37,9 +49,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const emailSuccess = await sendEmail({
         to: "info@gpc-performance.com",
         from: "noreply@gpc-performance.com", // This should be a verified sender in SendGrid
-        subject: `Contact Form: ${subject}`,
-        text: `
-New contact form submission:
+        subject: `Contact Form: ${escapeHtml(subject)}`,
+        text: `New contact form submission:
 
 Name: ${name}
 Email: ${email}
@@ -49,19 +60,16 @@ Message:
 ${message}
 
 Submission ID: ${submission.id}
-Submitted at: ${submission.createdAt}
-        `,
-        html: `
-<h2>New Contact Form Submission</h2>
-<p><strong>Name:</strong> ${name}</p>
-<p><strong>Email:</strong> ${email}</p>
-<p><strong>Subject:</strong> ${subject}</p>
+Submitted at: ${submission.createdAt}`,
+        html: `<h2>New Contact Form Submission</h2>
+<p><strong>Name:</strong> ${escapeHtml(name)}</p>
+<p><strong>Email:</strong> ${escapeHtml(email)}</p>
+<p><strong>Subject:</strong> ${escapeHtml(subject)}</p>
 <h3>Message:</h3>
-<p>${message.replace(/\n/g, '<br>')}</p>
+<p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
 <hr>
 <p><small>Submission ID: ${submission.id}</small></p>
-<p><small>Submitted at: ${submission.createdAt}</small></p>
-        `,
+<p><small>Submitted at: ${submission.createdAt}</small></p>`,
       });
 
       if (!emailSuccess) {
