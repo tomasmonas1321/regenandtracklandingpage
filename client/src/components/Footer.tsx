@@ -17,7 +17,7 @@ export default function Footer() {
               <span className="font-bold text-xl text-white">Regen & Track</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md text-center" data-testid="footer-description">
-              The smartest way to train. Track your wellness, recovery, and performance with the tools that serious athletes trust.
+              The smartest way to train. Track your wellness, recovery and performance with the tools that serious athletes trust.
             </p>
             
           </div>
