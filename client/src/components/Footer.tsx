@@ -1,4 +1,5 @@
 import { Twitter, Instagram, Youtube } from "lucide-react";
+import { Link } from "wouter";
 import logoImage from "@assets/regen & track logo very small_1755603375132.png";
 
 export default function Footer() {
@@ -33,6 +34,11 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4" data-testid="footer-support-title">Support</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="mailto:lukaskir81@gmail.com" className="hover:text-white transition-colors" data-testid="footer-contact">Contact</a></li>
+              <li>
+                <Link href="/privacy-policy" className="hover:text-white transition-colors" data-testid="footer-privacy-policy">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
