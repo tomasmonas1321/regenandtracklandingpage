@@ -35,7 +35,7 @@ export default function Testimonials() {
       role: "Football",
       initials: "CH",
       gradient: "from-vibrant-green to-vibrant-blue",
-      quote: "I used to push through fatigue without realizing the damage I was doing. Now, I track my sleep, soreness, and stress levels in one place.The app's insights are backed by sports science and easy to follow.",
+      quote: "I used to push through fatigue without realizing the damage I was doing. Now, I track my sleep, soreness, and stress levels in one place. The app's insights are backed by sports science and easy to follow.",
       rating: 5
     },
     {

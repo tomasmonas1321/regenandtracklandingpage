@@ -33,7 +33,7 @@ export default function BlogPost7() {
       </div>
       
       <h2>Welcome to Your All-in-One Performance Hub</h2>
-      <p>At GPC-Performance, our coaches and practitioners bring over 60 years of collective experience to the forefront of athletic development. We've built our reputation on a simple but powerful principle: integration. We are your one-stop shop for athletic excellence, bringing together every critical element of performance under a single, expert roof.</p>
+      <p>At GPC-Performance, our coaches and practitioners bring over 60 years of collective experience to the forefront of athletic development. We've built our reputation on a simple, powerful principle: integration. We are your one-stop shop for athletic excellence, bringing together every critical element of performance under a single, expert roof.</p>
       
       <p>Our comprehensive approach ensures that every aspect of your training, nutrition, and recovery works in perfect harmony.</p>
       

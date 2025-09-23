@@ -30,7 +30,7 @@ export default function TermsAndConditions() {
                 Regen & Track is a wellness and fitness tracking application that allows users to create a personal space to monitor and improve their athletic performance. The App's features include, but are not limited to:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>All-in-One Tracking:</strong> A central location for your journal, wellness scores, recovery metrics, strength numbers and fitness tests.</li>
+                <li><strong>All-in-One Tracking:</strong> A central location for your journal, wellness scores, recovery metrics, strength numbers, and fitness tests.</li>
                 <li><strong>Wellness Monitoring:</strong> The ability to track metrics such as sleep quality, energy levels, stress, and body soreness.</li>
                 <li><strong>Performance Analytics:</strong> Tools to visualize trends, and gain insights from your data to optimize your training.</li>
                 <li><strong>Recovery Assessment:</strong> The ability to track recovery activities, sleep patterns, and other lifestyle factors that impact your readiness to train.</li>

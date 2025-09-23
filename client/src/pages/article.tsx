@@ -211,7 +211,7 @@ export default function Article() {
 
         <h2>Evidence-Based Mental Training Techniques</h2>
 
-        <h3>1.Mindfulness and Present-Moment Awareness</h3>
+        <h3>1. Mindfulness and Present-Moment Awareness</h3>
         <p>Research consistently shows that mindfulness training enhances athletic performance by improving attention regulation and reducing performance anxiety.</p>
 
         <h4>Practice Techniques:</h4>
@@ -221,7 +221,7 @@ export default function Article() {
           <li>Breathing techniques for in-competition centering</li>
          </ul>
 
-        <h3>2.Cognitive Reframing</h3>
+        <h3>2. Cognitive Reframing</h3>
         <p>How you interpret events dramatically impacts your emotional response and subsequent performance. Cognitive reframing helps athletes view challenges as opportunities rather than threats.</p>
 
         <h4>Reframing Strategies:</h4>
@@ -232,7 +232,7 @@ export default function Article() {
           <li>Reframe nerves as excitement and readiness</li>
         </ul>
 
-        <h3>3.Visualization and Mental Rehearsal</h3>
+        <h3>3. Visualization and Mental Rehearsal</h3>
         <p>Mental imagery isn't just "seeing" success – it's a comprehensive sensory experience that primes your nervous system for optimal performance.</p>
 
         <h4>Effective Visualization Includes:</h4>
@@ -243,7 +243,7 @@ export default function Article() {
           <li>Realistic timelines and environmental factors</li>
         </ul>
 
-        <h3>4.Self-Talk Strategies</h3>
+        <h3>4. Self-Talk Strategies</h3>
         <p>The internal dialogue you maintain significantly influences your performance. Strategic self-talk can enhance focus, build confidence, and regulate emotions.</p>
 
         <h4>Types of Effective Self-Talk:</h4>

@@ -23,7 +23,7 @@ export default function Hero() {
             
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 leading-relaxed max-w-2xl" data-testid="hero-subheadline">
               Regen & Track is the simple, yet powerful, tool for athletes who are serious about getting better. 
-              Track what matters, get actionable insights, and unlock your true potential!
+              Track what matters, get actionable insights, and unlock your true potential.
             </p>
             
             

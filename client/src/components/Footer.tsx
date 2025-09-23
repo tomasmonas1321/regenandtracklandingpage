@@ -17,7 +17,7 @@ export default function Footer() {
               <span className="font-bold text-xl text-white">Regen & Track</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md text-center" data-testid="footer-description">
-              The smartest way to train. Track your wellness, recovery and performance with the tools that serious athletes trust.
+              The smartest way to train. Track your wellness, recovery, and performance with the tools that serious athletes trust.
             </p>
             
           </div>
@@ -26,7 +26,7 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4 ml-[19px] mr-[19px]" data-testid="footer-product-title">Product</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#features" className="ml-[17px] mr-[17px] hover:text-white transition-colors" data-testid="footer-features">Features</a></li>
-              <li><a href="https://app.regenandtrack.com" className="ml-[15px] mr-[15px] hover:text-white transition-colors" data-testid="footer-download">Download</a></li>
+              <li><a href="#download" className="ml-[15px] mr-[15px] hover:text-white transition-colors" data-testid="footer-download">Download</a></li>
             </ul>
           </div>
           
