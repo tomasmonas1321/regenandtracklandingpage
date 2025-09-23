@@ -1,0 +1,40 @@
+Terms and Conditions for Regen & Track
+Last Updated: September 23, 2025
+Welcome to Regen & Track! These Terms and Conditions ("Terms") govern your use of the Regen & Track mobile application (the "App") and any related services provided.
+By creating an account and using the App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App.
+1. App Features and Services
+Regen & Track is a wellness and fitness tracking application that allows users to create a personal space to monitor and improve their athletic performance. The App's features include, but are not limited to:
+•	All-in-One Tracking: A central location for your journal, wellness scores, recovery metrics, strength numbers, and fitness tests.
+•	Wellness Monitoring: The ability to track metrics such as sleep quality, energy levels, stress, and body soreness.
+•	Performance Analytics: Tools to visualize trends, and gain insights from your data to optimize your training.
+•	Recovery Assessment: The ability to track recovery activities, sleep patterns, and other lifestyle factors that impact your readiness to train.
+2. User Accounts
+To use features of the App, you will need to create an account. You can create an account by signing in with your email account. You are responsible for maintaining the confidentiality of your account and are fully responsible for all activities that occur under your account. You agree to immediately notify us of any unauthorized use of your account or any other breach of security.
+3. User Conduct and Restrictions
+As a condition of your use of the App, you agree not to:
+•	Use the App for any illegal or unauthorized purpose.
+•	Attempt to reverse engineer, decompile, disassemble, or derive the source code of the App.
+•	Use any robot, spider, scraper, or other automated means to access the App for any purpose without our express written permission.
+•	Take any action that imposes, or may impose, an unreasonable or disproportionately large load on our infrastructure.
+•	Interfere with or disrupt the security or functionality of the App or any servers or networks connected to it.
+•	Attempt to gain unauthorized access to any portion of the App or any other systems or networks connected to the App.
+•	Sell, rent, lease, or otherwise transfer your rights to the App.
+4. Health and Medical Disclaimer
+The App is for informational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read on the App.
+We are not responsible for any health problems that may result from training programs, consultations, products, or events you learn about through the App. You agree that you are voluntarily participating in these activities and assume all risks of injury to your person.
+5. Intellectual Property
+All content, features, and functionality of the App, including but not limited to text, graphics, logos, icons, software, and the arrangement thereof, are the exclusive property of [LK Performance Ltd] or its licensors and are protected by international copyright, trademark, and other intellectual property laws.
+6. Data and Privacy
+Your privacy is important to us. Our Privacy Policy explains how we collect, use, and share your personal information. By using the App, you agree to the collection and use of your information in accordance with our Privacy Policy.
+7. Termination
+We may, in our sole discretion, at any time terminate or suspend your access to the App, with or without notice, for any reason, including, without limitation, a breach of these Terms.
+8. Disclaimers and Limitation of Liability
+THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE." WE EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+WE WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), RESULTING FROM THE USE OR THE INABILITY TO USE THE APP.
+9. Governing Law
+These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions.
+10. Changes to These Terms
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide reasonable notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+11. Contact Us
+If you have any questions about these Terms, please contact us at [info@gpc-performance.com].
+

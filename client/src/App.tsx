@@ -12,6 +12,7 @@ import BlogPost5 from "@/pages/blog-post-5";
 import BlogPost6 from "@/pages/blog-post-6";
 import BlogPost7 from "@/pages/blog-post-7";
 import PrivacyPolicy from "@/pages/privacy-policy";
+import TermsAndConditions from "@/pages/terms-and-conditions";
 import Contact from "@/pages/contact";
 import Testimonials from "@/pages/testimonials";
 import NotFound from "@/pages/not-found";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/blog-post-6" component={BlogPost6} />
         <Route path="/blog-post-7" component={BlogPost7} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-and-conditions" component={TermsAndConditions} />
         <Route path="/contact" component={Contact} />
         <Route path="/testimonials" component={Testimonials} />
         <Route component={NotFound} />
