@@ -234,7 +234,7 @@ export default function Testimonials() {
                     type="button"
                     onClick={handleCancel}
                     variant="outline"
-                    className="border-purple-700/30 text-white hover:bg-purple-700/30"
+                    className="border hover:text-accent-foreground h-10 px-4 py-2 border-purple-700/30 text-white hover:bg-purple-700/30 bg-[#2a2c37]"
                     data-testid="button-cancel"
                   >
                     Cancel
