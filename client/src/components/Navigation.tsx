@@ -80,13 +80,6 @@ export default function Navigation() {
             <Link href="/testimonials" className="text-gray-300 hover:text-white transition-colors" data-testid="nav-testimonials">
               Testimonials
             </Link>
-            <Button
-              onClick={() => location === "/" ? scrollToSection("download") : window.location.href = "/#download"}
-              className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90"
-              data-testid="nav-cta"
-            >
-              Get Started
-            </Button>
           </div>
           
           <Button
@@ -135,13 +128,6 @@ export default function Navigation() {
               <Link href="/testimonials" className="block text-gray-300 hover:text-white transition-colors" data-testid="mobile-nav-testimonials">
                 Testimonials
               </Link>
-              <Button
-                onClick={() => location === "/" ? scrollToSection("download") : window.location.href = "/#download"}
-                className="w-full bg-gradient-to-r from-vibrant-blue to-vibrant-green"
-                data-testid="mobile-nav-cta"
-              >
-                Get Started
-              </Button>
             </div>
           </div>
         )}
