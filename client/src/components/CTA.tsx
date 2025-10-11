@@ -13,7 +13,7 @@ export default function CTA() {
             Regen & Track is free, private, and built for you.
           </p>
           <div className="mt-8 flex justify-center" data-testid="cta-button-container">
-            <a href="https://app.regenandtrack.com">
+            <a href="https://wellnessapp.gpc-performance.com">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-vibrant-blue to-vibrant-green hover:opacity-90 transform hover:scale-105 transition-all duration-200 px-10 py-8 text-xl font-semibold"
