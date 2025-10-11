@@ -26,7 +26,7 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4 ml-[19px] mr-[19px]" data-testid="footer-product-title">Product</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#features" className="ml-[17px] mr-[17px] hover:text-white transition-colors" data-testid="footer-features">Features</a></li>
-              <li><a href="https://app.regenandtrack.com/" className="ml-[15px] mr-[15px] hover:text-white transition-colors" data-testid="footer-download">Download</a></li>
+              <li><a href="https://wellnessapp.gpc-performance.com" className="ml-[15px] mr-[15px] hover:text-white transition-colors" data-testid="footer-download">Download</a></li>
             </ul>
           </div>
           
