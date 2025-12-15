@@ -51,7 +51,7 @@ export default function Testimonials() {
       id: "4",
       name: "John",
       role: "GAA",
-      initials: "JN",
+      initials: "JO",
       gradient: "from-vibrant-purple to-vibrant-blue",
       quote: "Love the new update. The daily wellness logging is super smooth, but the real value is in the Trend Section. Being able to switch between 14 and 28-day views gives me such a clear picture of my fatigue levels. The optimal channels feature is brilliant—it visually shows you exactly where you are within broader trend. Essential tool for my pre-season prep.",
       rating: 5
