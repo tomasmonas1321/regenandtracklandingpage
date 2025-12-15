@@ -43,7 +43,7 @@ export default function Testimonials() {
       name: "Alan",
       role: "Soccer",
       initials: "AD",
-      gradient: "from-vibrant-orange to-vibrant-red",
+      gradient: "from-vibrant-blue to-vibrant-green",
       quote: "Simple, yet powerful. I love strength tracking feature.",
       rating: 5
     },
@@ -52,7 +52,7 @@ export default function Testimonials() {
       name: "John",
       role: "GAA",
       initials: "JO",
-      gradient: "from-vibrant-purple to-vibrant-blue",
+      gradient: "from-vibrant-green to-vibrant-blue",
       quote: "Love the new update. The daily wellness logging is super smooth, but the real value is in the Trend Section. Being able to switch between 14 and 28-day views gives me such a clear picture of my fatigue levels. The optimal channels feature is brilliant—it visually shows you exactly where you are within broader trend. Essential tool for my pre-season prep.",
       rating: 5
     }
